@@ -1,102 +1,91 @@
-<!-- 💫 About Section -->
-<h1 align="center">Hi there, I'm Pranav 👋</h1>
+<h1 align="center">Hi, I'm Pranav 👋</h1>
 
 <p align="center">
-  <em>Passionate developer, problem solver, and lifelong learner.</em><br>
-  💻 I love building full-stack applications, exploring AI/ML, and crafting efficient backend systems.<br>
-  🚀 Always learning, always building.
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;AI+%2F+ML+Enthusiast;Backend+Engineer;Always+Learning+Always+Building" />
+</p>
+
+<p align="center">
+  🚀 Turning ideas into  **scalable systems**  | 💡 Problem Solver | 🧠 AI Explorer  
 </p>
 
 ---
 
-## 🌐 Connect with Me  
+## 💼 Featured Portfolio & Projects
+
+Recruiters: See my work in action and explore my approach to **System Design** and **High-Performance Backends**.
+
+<p align="center">
+  🌍 <b>Professional Portfolio:</b>  
+  <br>
+  👉 <a href="https://pranav2005-kp-portfolio.vercel.app/" target="_blank"><b>https://pranav2005-kp-portfolio.vercel.app</b></a>
+</p>
+
+---
+
+## 🌐 Connect & Collaborate  
+
+I'm always open to discussing new opportunities, open-source collaborations, or complex system design challenges.
+
 <p align="center">
   <a href="https://linkedin.com/in/k-pranav2005" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="mailto:pranav2005.kp@gmail.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 </p>
 
 ---
 
-## 💻 Tech Stack  
+## 🧑‍💻 Core Competencies & Tech Stack
 
-### 🧠 Languages  
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=yellow)
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+This section summarizes my focus areas and the technologies I use to deliver **end-to-end solutions**.
 
-### ⚙️ Frameworks & Libraries  
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-%23009688.svg?style=for-the-badge&logo=fastapi&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-### 🧠 AI / ML & Data Science  
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%230C55A5.svg?style=for-the-badge&logo=matplotlib&logoColor=white)
-
-### ☁️ Tools & Platforms  
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-
-### 🗄️ Databases  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-%2307405E.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+| Category | Key Strengths & Tools | Badges for Impact |
+| :--- | :--- | :--- |
+| **Backend & Scalability** | Python (Django/Flask), REST APIs, System Design |  ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **AI / ML & Data** | PyTorch, TensorFlow, Scikit-learn, Pandas, Model Deployment, MLOps, Data Pipelines | ![](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) ![](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) |
+| **Frontend & UI/UX** | React, JavaScript, Tailwind CSS, Responsive Design, State Management | ![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)  ![](https://img.shields.io/badge/JavaScript-3178C6?style=for-the-badge&logo=javascript&logoColor=white) |
+| **Databases & DevOps** | PostgreSQL, MongoDB, Docker, AWS/GCP, Git/GitHub Actions | ![](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) |
 
 ---
 
-## 📊 GitHub Stats  
+## 📊 My GitHub Performance
+
+A snapshot of my commitment to continuous integration, learning, and open-source contributions.
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kpranav-Kp&theme=tokyonight&show_icons=true&hide_border=false&include_all_commits=true" height="160px"/>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Kpranav-Kp&theme=tokyonight&hide_border=false" height="160px"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kpranav-Kp&theme=tokyonight&layout=compact&hide_border=false" height="160px"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=pranav2005-kp&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_title=true&icon_color=ff7f50&text_color=c9d1d9&bg_color=0d1117" alt="Pranav's GitHub Stats" width="450" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranav2005-kp&layout=compact&theme=dark&hide_title=true&langs_count=6&icon_color=ff7f50&text_color=c9d1d9&bg_color=0d1117" alt="Pranav's Top Languages" width="350" />
 </p>
 
 ---
 
-## 🏆 Achievements & Highlights  
+## 🏆 GitHub Contribution Snake
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kpranav-Kp&theme=onedark&no-frame=false&no-bg=false&margin-w=4"/>
+  <img src="https://raw.githubusercontent.com/pranav2005-kp/pranav2005-kp/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" />
 </p>
 
 ---
 
-## 🔝 Top Contributed Repositories  
+## 📈 Profile Visits
+
 <p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=Kpranav-Kp&limit=5&theme=onedark&combine_all_yearly_contributions=true"/>
+  <img src="https://komarev.com/ghpvc/?username=pranav2005-kp&color=ff69b4&style=flat" alt="Profile views" />
 </p>
 
 ---
 
-## 📈 Profile Views  
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Kpranav-Kp&icon=0&color=1" alt="Profile Views"/>
-</p>
+## 🧬 Developer Signature (ASCII Art)
 
----
-
-<h3 align="center">⭐ “Code. Learn. Build. Repeat.” ⭐</h3>
+<pre>
+██████╗ ██████╗  █████╗ ███╗   ██╗ █████╗ ██╗   ██╗
+██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██║   ██║
+██████╔╝██████╔╝███████║██╔██╗ ██║███████║██║   ██║
+██╔═══╝ ██╔══██╗██╔══██║██║╚██╗██║██╔══██║╚██╗ ██╔╝
+██║     ██║  ██║██║  ██║██║ ╚████║██║  ██║ ╚████╔╝ 
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+      
+      👑  Pranav | Full Stack • AI • Backend  👑
+</pre>
