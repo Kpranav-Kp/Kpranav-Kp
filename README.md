@@ -12,8 +12,8 @@
 
 ## 💫 About Me:
 
-* **🔭 I’m currently working on:** Developing an **MLOps pipeline** for real-time model deployment using FastAPI and Docker.
-* **🌱 I’m currently learning:** Fast and Secure backend endpoints using **Node.js** along with faster **SEO and SSR** using **Next.js**.
+* **🔭 I’m currently working on:** Developing an MLOps pipeline for real-time model deployment using FastAPI and Docker.
+* **🌱 I’m currently learning:** Fast and Secure backend endpoints using Node.js along with faster SEO  and SRS using Next.js
 * **💬 Ask me about:** Full-stack development, Python backend performance, or deploying Machine Learning models into production.
 * **⚡ Fun fact:** I solve competitive programming problems to unwind!
 
@@ -58,6 +58,35 @@ I leverage a robust set of tools to deliver **end-to-end solutions**, from high-
 
 ---
 
+## 📈 GitHub Performance & Recognition
+
+
+
+### 🔥 Developer Streak & Consistency
+<p align="center">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Kpranav-Kp&theme=dark&hide_border=false" alt="GitHub Streak" />
+</p>
+
+### 🏆 GitHub Trophies
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Kpranav-Kp&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+</p>
+
+---
+
+## ✍️ Random Dev Quote & Top Repo
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+</p>
+
+<p align="center">
+  ### 🔝 Top Contributed Repository
+  <img src="https://github-contributor-stats.vercel.app/api?username=Kpranav-Kp&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repo" />
+</p>
+
+
+
 ## 🧬 Developer Signature (ASCII Art)
 
 <pre>
@@ -70,8 +99,6 @@ I leverage a robust set of tools to deliver **end-to-end solutions**, from high-
       
       👑  Pranav | Full Stack • AI • Backend  👑
 </pre>
-
----
 
 ### 📈 Profile Visits
 
