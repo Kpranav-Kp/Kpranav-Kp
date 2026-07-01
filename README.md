@@ -16,6 +16,7 @@
 <td width="50%" valign="top">
 
 ### 🚀 RepoInsight
+
 > AI-powered GitHub repository analysis platform that helps developers understand, document, and improve repositories.
 
 <p align="left">
@@ -34,6 +35,7 @@
 <td width="50%" valign="top">
 
 ### 🛡️ LangGuardX
+
 > Multi-layer AI security framework designed to detect prompt injection, jailbreaks, and malicious inputs before they reach an LLM.
 
 <p align="left">
@@ -51,7 +53,7 @@
 </tr>
 </table>
 
-<img width="100%" height="3" src="assets/divider.svg"/>
+<img width="100%" height="3" src="assets/divider_purple.svg"/>
 
 ## 💻 Tech Stack
 
@@ -122,7 +124,7 @@
   <img src="assets/developer-dna.svg" width="90%" alt="Developer DNA" />
 </div>
 
-<img width="100%" height="3" src="assets/divider.svg"/>
+<img width="100%" height="3" src="assets/divider_purple.svg"/>
 
 ## 🤝 Let's Connect
 
