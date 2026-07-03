@@ -1,4 +1,4 @@
-name: Update Engineering Insights SVG
+name: Update Profile Analytics SVG
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate SVG
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python scripts/generate_dna.py
 
       - name: Commit and push

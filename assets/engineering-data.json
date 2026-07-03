@@ -1,34 +1,47 @@
 {
   "generated": "Jul 2026",
-  "generated_iso": "2026-07-03T04:58:47Z",
+  "generated_iso": "2026-07-03T06:01:08Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 63.0,
+      "percentage": 57.7,
       "repos": 8,
       "color": "#3776AB",
-      "trend": 0.0
+      "trend": -5.3
     },
     {
       "name": "JavaScript",
-      "percentage": 37.0,
+      "percentage": 33.9,
       "repos": 5,
       "color": "#F7DF1E",
-      "trend": 0.0
+      "trend": -3.1
+    },
+    {
+      "name": "HTML",
+      "percentage": 5.5,
+      "repos": 6,
+      "color": "#3B82F6",
+      "trend": null
+    },
+    {
+      "name": "CSS",
+      "percentage": 2.9,
+      "repos": 5,
+      "color": "#3B82F6",
+      "trend": null
+    },
+    {
+      "name": "Dockerfile",
+      "percentage": 0.0,
+      "repos": 1,
+      "color": "#3B82F6",
+      "trend": null
     }
   ],
   "technologies": [
     {
-      "name": "React",
-      "percentage": 30.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#61DAFB"
-    },
-    {
       "name": "Django",
-      "percentage": 30.0,
+      "percentage": 33.0,
       "score": 1.0,
       "level": "Advanced",
       "level_color": "#10B981",
@@ -36,35 +49,43 @@
     },
     {
       "name": "PostgreSQL",
-      "percentage": 30.0,
+      "percentage": 33.0,
       "score": 1.0,
       "level": "Advanced",
       "level_color": "#10B981",
       "color": "#336791"
     },
     {
+      "name": "React",
+      "percentage": 33.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#10B981",
+      "color": "#61DAFB"
+    },
+    {
       "name": "Python",
-      "percentage": 63.0,
-      "score": 0.852,
+      "percentage": 57.7,
+      "score": 0.831,
       "level": "Advanced",
       "level_color": "#10B981",
       "color": "#3776AB"
     },
     {
       "name": "Docker",
-      "percentage": 20.0,
-      "score": 0.733,
+      "percentage": 25.0,
+      "score": 0.819,
       "level": "Intermediate",
       "level_color": "#3B82F6",
       "color": "#2496ED"
     },
     {
-      "name": "FastAPI",
-      "percentage": 20.0,
-      "score": 0.733,
+      "name": "Celery",
+      "percentage": 24.0,
+      "score": 0.781,
       "level": "Intermediate",
       "level_color": "#3B82F6",
-      "color": "#059669"
+      "color": "#37814A"
     }
   ],
   "complexity": [
@@ -88,33 +109,33 @@
     }
   ],
   "profile": {
-    "active_pct": 20,
-    "languages_count": 2,
+    "active_pct": 66,
+    "languages_count": 5,
     "maturity": 1.5,
     "grades": [
       {
         "label": "Overall",
-        "grade": "C+",
-        "score": 46,
-        "color": "#EC4899"
+        "grade": "A",
+        "score": 66,
+        "color": "#3B82F6"
       },
       {
         "label": "Activity",
-        "grade": "C",
-        "score": 20,
-        "color": "#6B7280"
+        "grade": "A",
+        "score": 66,
+        "color": "#3B82F6"
       },
       {
         "label": "Depth",
-        "grade": "B+",
-        "score": 67,
-        "color": "#8B5CF6"
+        "grade": "A+",
+        "score": 83,
+        "color": "#10B981"
       },
       {
         "label": "Breadth",
-        "grade": "B+",
-        "score": 68,
-        "color": "#8B5CF6"
+        "grade": "S",
+        "score": 86,
+        "color": "#FFD700"
       }
     ]
   }

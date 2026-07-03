@@ -1,12 +1,12 @@
 import os
 import requests
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GH_TOKEN = os.getenv("GH_TOKEN")
 GITHUB_USERNAME = "Kpranav-Kp"
 
 
 def _headers():
-    return {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
+    return {"Authorization": f"token {GH_TOKEN}"} if GH_TOKEN else {}
 
 
 def fetch_repos():
@@ -51,3 +51,23 @@ def fetch_releases(releases_url):
     if resp.status_code == 200:
         return resp.json()
     return []
+
+
+def fetch_commit_count(repo_full_name):
+    url = f"https://api.github.com/repos/{repo_full_name}/commits?per_page=1"
+    resp = requests.get(url, headers=_headers())
+    if resp.status_code not in (200, 201):
+        return 0
+    data = resp.json()
+    if not isinstance(data, list) or len(data) == 0:
+        return 0
+    link = resp.headers.get("Link", "")
+    if not link:
+        return 1
+    for part in link.split(","):
+        if 'rel="last"' in part:
+            import re
+            m = re.search(r'[?&]page=(\d+)', part)
+            if m:
+                return int(m.group(1))
+    return 1

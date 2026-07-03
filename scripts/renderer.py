@@ -80,7 +80,7 @@ def render_svg(data):
             parts.append(f'<div class="nc">{"".join(nodes)}</div>')
         network_html = "".join(parts)
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="100%">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="100%" height="100%">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" class="card">
       <style>
@@ -141,7 +141,7 @@ def render_svg(data):
         .gb {{ display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; border: 1px solid; border-radius: 10px; }}
         .gl {{ font-size: 18px; font-weight: 800; letter-spacing: -0.5px; line-height: 1; }}
         .gln {{ font-size: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); }}
-        .nc {{ display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 6px; flex-wrap: wrap; }}
+        .nc {{ display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }}
         .nc:last-child {{ margin-bottom: 0; }}
         .nn {{ display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px 5px 8px; border: 1px solid var(--bl); border-left: 3px solid; border-radius: 8px; background: var(--bar-bg); font-size: 11px; animation: fadeIn 0.4s ease-out both; }}
         .nnd {{ display: inline-block; width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }}
@@ -162,7 +162,7 @@ def render_svg(data):
           .hl {{ width: 70px; }}
         }}
       </style>
-      <h1>Engineering Insights</h1>
+      <h1>Profile Analytics</h1>
       <div class="grid">
         <div class="sc sf">
           <h2>Core Technologies</h2>
@@ -182,9 +182,10 @@ def render_svg(data):
           {network_html}
         </div>
       </div>
+      <div style="height:20px"></div>
       <div class="footer">
         <span>Updated {generated}</span>
-        <span>GitHub Actions \u00b7 engineering-insights</span>
+        <span>GitHub Actions \u00b7 profile-analytics</span>
       </div>
     </div>
   </foreignObject>

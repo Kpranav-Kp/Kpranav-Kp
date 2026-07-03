@@ -1,10 +1,7 @@
 from datetime import datetime, timezone
 from collections import defaultdict
 
-EXCLUDE_LANGUAGES = {
-    "Jupyter Notebook", "Dockerfile", "HTML", "CSS",
-    "Vendor", "Generated", "Makefile", "Shell",
-}
+EXCLUDE_LANGUAGES = {"Jupyter Notebook"}
 
 TOPIC_TO_CATEGORY = {
     "backend": "Backend", "ai-ml": "AI / ML", "ai": "AI / ML",
@@ -26,6 +23,7 @@ FRAMEWORK_MAP = {
     "express": "Express", "nextjs": "Next.js", "vue": "Vue",
     "tensorflow": "TensorFlow", "pytorch": "PyTorch",
     "transformers": "Transformers", "spring": "Spring",
+    "celery": "Celery",
 }
 
 DATABASE_MAP = {
@@ -38,10 +36,12 @@ INFRA_MAP = {
     "docker": "Docker", "kubernetes": "Kubernetes",
     "vercel": "Vercel", "github-actions": "GitHub Actions",
     "aws": "AWS", "gcp": "GCP", "azure": "Azure",
+    "supabase": "Supabase",
 }
 
 CONTENTS_FRAMEWORK = {
     "manage.py": "Django", "next.config.js": "Next.js", "nuxt.config.js": "Nuxt",
+    "celery.py": "Celery",
 }
 
 CONTENTS_INFRA = {
@@ -68,7 +68,7 @@ TECH_COLORS = {
     "Docker": "#2496ED", "Kubernetes": "#326CE5",
     "Vercel": "#000000", "GitHub Actions": "#2088FF",
     "AWS": "#FF9900", "GCP": "#4285F4", "Azure": "#0078D4",
-    "Nginx": "#009639",
+    "Nginx": "#009639", "Celery": "#37814A", "Supabase": "#3ECF8E",
 }
 
 MAX_DAYS = 365
@@ -79,9 +79,10 @@ def _recency(last_push, now):
     return max(0, 1 - min(days, MAX_DAYS) / MAX_DAYS)
 
 
-def _level(score):
-    if score > 0.8: return "Advanced"
-    if score > 0.4: return "Intermediate"
+def _level(pct, score):
+    combined = score * 0.6 + (pct / 100) * 0.4
+    if combined >= 0.7: return "Advanced"
+    if combined >= 0.4: return "Intermediate"
     return "Beginner"
 
 
@@ -92,16 +93,16 @@ LEVEL_COLORS = {
 
 
 def _grade(score):
-    if score >= 90: return ("S", "#FFD700")
-    if score >= 80: return ("A+", "#10B981")
-    if score >= 70: return ("A", "#3B82F6")
-    if score >= 60: return ("B+", "#8B5CF6")
-    if score >= 50: return ("B", "#F59E0B")
-    if score >= 40: return ("C+", "#EC4899")
+    if score >= 85: return ("S", "#FFD700")
+    if score >= 70: return ("A+", "#10B981")
+    if score >= 55: return ("A", "#3B82F6")
+    if score >= 40: return ("B+", "#8B5CF6")
+    if score >= 25: return ("B", "#F59E0B")
+    if score >= 15: return ("C+", "#EC4899")
     return ("C", "#6B7280")
 
 
-def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, old_data=None):
+def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, fetched_commits=None, old_data=None):
     now = datetime.now(timezone.utc)
 
     lang_bytes = defaultdict(int)
@@ -149,12 +150,16 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
         content_names = [c.get("name", "") for c in contents if isinstance(c, dict)]
         content_types = {c.get("name", ""): c.get("type", "") for c in contents if isinstance(c, dict)}
 
+        commit_count = (fetched_commits or {}).get(repo_key, 1)
+        repo_weight = max(0.1, 1 - (now - pushed_at).days / 730)
         repo_details.append({
             "name": repo_name,
             "size": repo.get("size", 0),
+            "weight": repo_weight,
+            "commit_count": commit_count,
             "topics": topics,
-            "langs": list(langs.keys()),
-            "num_langs": len(langs),
+            "langs": [l for l in langs if l not in EXCLUDE_LANGUAGES],
+            "num_langs": len([l for l in langs if l not in EXCLUDE_LANGUAGES]),
             "content_names": content_names,
             "has_package": any(f in content_names for f in PACKAGE_FILES),
             "has_tests": any(d in content_names and content_types.get(d) == "dir" for d in TEST_DIRS),
@@ -194,16 +199,13 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
     complexity_buckets = {"Small": 0, "Medium": 0, "Large": 0}
     for rd in repo_details:
         s = 0
-        if rd["size"] > 1000: s += 1
-        if rd["size"] > 5000: s += 1
         if rd["has_package"]: s += 1
         if rd["has_tests"]: s += 1
         if rd["has_docker"]: s += 1
         if rd["has_cicd"]: s += 1
         if rd["num_langs"] >= 2: s += 1
-        if rd["num_langs"] >= 4: s += 1
-        if s <= 2: complexity_buckets["Small"] += 1
-        elif s <= 5: complexity_buckets["Medium"] += 1
+        if s <= 1: complexity_buckets["Small"] += 1
+        elif s <= 3: complexity_buckets["Medium"] += 1
         else: complexity_buckets["Large"] += 1
 
     comp_colors = {"Small": "#10B981", "Medium": "#F59E0B", "Large": "#EF4444"}
@@ -256,6 +258,12 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
         if "package.json" in cn and primary in ("JavaScript", "TypeScript"):
             lang_framework[primary]["Node.js"] += 1
             detected_this.add("Node.js")
+        for fn in cn:
+            fnl = fn.lower()
+            if (fnl.endswith(".jsx") or fnl.endswith(".tsx")) and primary in ("JavaScript", "TypeScript"):
+                lang_framework[primary]["React"] += 1
+                detected_this.add("React")
+                break
 
         for fn in cn:
             fnl = fn.lower()
@@ -271,8 +279,9 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
                 break
 
         for tech in detected_this:
-            all_detected[tech] += 1
+            all_detected[tech] += rd["weight"]
 
+    total_weight = sum(rd["weight"] for rd in repo_details)
     all_candidates = []
     for lang, pct in lang_pct.items():
         byte_score = pct / 100
@@ -292,24 +301,25 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
     technologies = []
     for name, score, source in top_candidates:
         if source == "detected":
-            pct = round((all_detected.get(name, 0) / total_repos) * 100, 0) if total_repos > 0 else 0
+            pct = round((all_detected.get(name, 0) / total_weight) * 100, 0) if total_weight > 0 else 0
         else:
             pct = lang_pct.get(name, 0)
         technologies.append({
             "name": name,
             "percentage": pct,
             "score": round(score, 3),
-            "level": _level(score),
-            "level_color": LEVEL_COLORS[_level(score)],
+            "level": _level(pct, score),
+            "level_color": LEVEL_COLORS[_level(pct, score)],
             "color": TECH_COLORS.get(name, "#3B82F6"),
         })
 
-    active_pct = round((active_30_count / total_repos) * 100, 0) if total_repos > 0 else 0
+    repo_activities = [rd["weight"] * 0.5 + min(rd["commit_count"] / 30, 1) * 0.5 for rd in repo_details]
+    active_pct = round((sum(repo_activities) / len(repo_activities)) * 100, 0) if repo_activities else 0
     languages_count = len(lang_pct)
     max_years = round((max(all_ages_days) / 365.25), 1) if all_ages_days else 0
 
-    depth_count = sum(1 for t in technologies if t["level"] in ("Expert", "Advanced"))
-    depth_pct = round((depth_count / len(technologies)) * 100, 0) if technologies else 0
+    depth_score = sum(1 for t in technologies if t["level"] == "Advanced") * 1.0 + sum(1 for t in technologies if t["level"] == "Intermediate") * 0.5
+    depth_pct = min(round((depth_score / len(technologies)) * 100, 0), 100) if technologies else 0
     breadth_score = min(len(cat_counts) * 14 + len(lang_pct) * 6, 100)
     maturity_pct = min(round(max_years / 5 * 100, 0), 100)
 
@@ -344,60 +354,51 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
         topics_lower = [t.lower() for t in rd["topics"]]
         cn = rd["content_names"]
 
-        fw = None
+        fws = set()
         for t in topics_lower:
             if t in FRAMEWORK_MAP:
-                fw = FRAMEWORK_MAP[t]
-                break
-        if not fw:
-            for fn, tech in CONTENTS_FRAMEWORK.items():
-                if fn in cn:
-                    fw = tech
-                    break
-        if not fw and "package.json" in cn and lang in ("JavaScript", "TypeScript"):
-            fw = "Node.js"
+                fws.add(FRAMEWORK_MAP[t])
+        for fn, tech in CONTENTS_FRAMEWORK.items():
+            if fn in cn:
+                fws.add(tech)
+        if not fws and "package.json" in cn and lang in ("JavaScript", "TypeScript"):
+            fws.add("Node.js")
+        if lang in ("JavaScript", "TypeScript") and any(fn.lower().endswith(".jsx") or fn.lower().endswith(".tsx") for fn in cn):
+            fws.add("React")
 
-        infra = None
+        infras = set()
         for t in topics_lower:
             if t in INFRA_MAP:
-                infra = INFRA_MAP[t]
-                break
-        if not infra:
-            for fn, tech in CONTENTS_INFRA.items():
-                if fn in cn:
-                    infra = tech
-                    break
+                infras.add(INFRA_MAP[t])
+        for fn, tech in CONTENTS_INFRA.items():
+            if fn in cn:
+                infras.add(tech)
 
-        db = None
+        dbs = set()
         for t in topics_lower:
             if t in DATABASE_MAP:
-                db = DATABASE_MAP[t]
-                break
-        if not db:
-            for fn in cn:
-                fnl = fn.lower()
-                if "postgres" in fnl or "psql" in fnl:
-                    db = "PostgreSQL"
-                    break
-                if "mongo" in fnl:
-                    db = "MongoDB"
-                    break
+                dbs.add(DATABASE_MAP[t])
+        for fn in cn:
+            fnl = fn.lower()
+            if "postgres" in fnl or "psql" in fnl:
+                dbs.add("PostgreSQL")
+            if "mongo" in fnl:
+                dbs.add("MongoDB")
+            if "redis" in fnl:
+                dbs.add("Redis")
 
-        chain = [lang]
-        if fw: chain.append(fw)
-        if infra: chain.append(infra)
-        if db: chain.append(db)
+        chain = [lang] + sorted(fws) + sorted(infras) + sorted(dbs)
 
         if len(chain) > 1:
             chain_counter[tuple(chain)] += 1
 
     all_tech_set = set(FRAMEWORK_MAP.values()) | set(INFRA_MAP.values()) | set(DATABASE_MAP.values())
     network_chains = []
-    for chain_tuple, _ in sorted(chain_counter.items(), key=lambda x: x[1], reverse=True)[:3]:
+    for chain_tuple, _ in sorted(chain_counter.items(), key=lambda x: (x[1], len(x[0])), reverse=True)[:2]:
         cd = []
         for entry in chain_tuple:
             if entry in all_tech_set:
-                tc = sum(1 for rd_ in repo_details if any(
+                tc = sum(rd_["weight"] for rd_ in repo_details if any(
                     (FRAMEWORK_MAP.get(t.lower()) == entry or
                      INFRA_MAP.get(t.lower()) == entry or
                      DATABASE_MAP.get(t.lower()) == entry) for t in rd_["topics"])
@@ -408,13 +409,13 @@ def compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_rele
                     or (entry == "MongoDB" and any("mongo" in f.lower() for f in rd_["content_names"]))
                     or (entry == "Django" and "manage.py" in rd_["content_names"])
                     or (entry == "Next.js" and "next.config.js" in rd_["content_names"]))
-                pct = round((tc / total_repos) * 100, 0) if total_repos > 0 else 0
+                pct = round((tc / total_weight) * 100, 0) if total_weight > 0 else 0
             else:
                 pct = lang_pct.get(entry, 0)
             cd.append({"name": entry, "pct": int(pct) if pct == int(pct) else pct, "color": TECH_COLORS.get(entry, "#3B82F6")})
         network_chains.append(cd)
 
-    network = network_chains[:3]
+    network = network_chains[:2]
 
     return {
         "generated": now.strftime("%b %Y"),

@@ -118,10 +118,10 @@
 
 <img width="100%" height="3" src="assets/divider.svg"/>
 
-## Engineering Insights
+## 📊 Profile Analytics
 
 <div align="center">
-  <img src="assets/developer-dna.svg" width="90%" alt="Engineering Insights" />
+  <img src="assets/developer-dna.svg" width="90%" alt="Profile Analytics" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>

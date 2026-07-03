@@ -1,6 +1,16 @@
 import os
 import json
-from github_api import fetch_repos, fetch_topics, fetch_languages, fetch_repo_contents, fetch_releases
+from pathlib import Path
+
+env_path = Path(__file__).resolve().parent.parent / ".env"
+if env_path.exists():
+    for line in env_path.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+from github_api import fetch_repos, fetch_topics, fetch_languages, fetch_repo_contents, fetch_releases, fetch_commit_count
 from analytics import compute
 from renderer import render_svg
 
@@ -16,6 +26,7 @@ def main():
     fetched_langs = {}
     fetched_contents = {}
     fetched_releases = {}
+    fetched_commits = {}
 
     for repo in repos:
         if repo.get("fork", False):
@@ -25,6 +36,7 @@ def main():
         fetched_langs[key] = fetch_languages(repo["languages_url"])
         fetched_contents[key] = fetch_repo_contents(repo["contents_url"])
         fetched_releases[key] = fetch_releases(repo["releases_url"])
+        fetched_commits[key] = fetch_commit_count(repo["full_name"])
 
     old_data = None
     if os.path.exists(DATA_FILE):
@@ -34,7 +46,7 @@ def main():
         except Exception:
             pass
 
-    data = compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, old_data)
+    data = compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, fetched_commits, old_data)
 
     svg = render_svg(data)
 
@@ -46,7 +58,7 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data_out, f, indent=2)
 
-    print("Engineering Insights SVG generated successfully.")
+    print("Profile Analytics SVG generated successfully.")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="100%" height="100%">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" class="card">
       <style>
@@ -59,7 +59,7 @@
         .gb { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; border: 1px solid; border-radius: 10px; }
         .gl { font-size: 18px; font-weight: 800; letter-spacing: -0.5px; line-height: 1; }
         .gln { font-size: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); }
-        .nc { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 6px; flex-wrap: wrap; }
+        .nc { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
         .nc:last-child { margin-bottom: 0; }
         .nn { display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px 5px 8px; border: 1px solid var(--bl); border-left: 3px solid; border-radius: 8px; background: var(--bar-bg); font-size: 11px; animation: fadeIn 0.4s ease-out both; }
         .nnd { display: inline-block; width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
@@ -80,46 +80,46 @@
           .hl { width: 70px; }
         }
       </style>
-      <h1>Engineering Insights</h1>
+      <h1>Profile Analytics</h1>
       <div class="grid">
         <div class="sc sf">
           <h2>Core Technologies</h2>
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.15s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.4s"></div></div>
+      <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.25s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.5s"></div></div>
+      <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.5s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.35s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.6s"></div></div>
+      <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.6s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.45s both;">
       <div class="tca" style="background:#10B981"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:63.0%;background:#10B981;animation-delay:0.7s"></div></div>
+      <div class="tcb"><div class="bar" style="width:57.7%;background:#10B981;animation-delay:0.7s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.55s both;">
       <div class="tca" style="background:#3B82F6"></div>
       <span class="tcn">Docker</span>
       <span class="tcl" style="color:#3B82F6">Intermediate</span>
-      <div class="tcb"><div class="bar" style="width:20.0%;background:#3B82F6;animation-delay:0.8s"></div></div>
+      <div class="tcb"><div class="bar" style="width:25.0%;background:#3B82F6;animation-delay:0.8s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.65s both;">
       <div class="tca" style="background:#3B82F6"></div>
-      <span class="tcn">FastAPI</span>
+      <span class="tcn">Celery</span>
       <span class="tcl" style="color:#3B82F6">Intermediate</span>
-      <div class="tcb"><div class="bar" style="width:20.0%;background:#3B82F6;animation-delay:0.9s"></div></div>
+      <div class="tcb"><div class="bar" style="width:24.0%;background:#3B82F6;animation-delay:0.9s"></div></div>
     </div></div>
         </div>
         <div class="sc">
@@ -149,43 +149,44 @@
           
     <div class="row" style="animation: slideRow 0.5s ease-out 0.2s both;">
       <span class="rl hl">Active</span>
-      <div class="bt"><div class="bar" style="width:20%;background:#10B981;animation-delay:0.5s"></div></div>
-      <span class="rv">20%</span>
+      <div class="bt"><div class="bar" style="width:66%;background:#10B981;animation-delay:0.5s"></div></div>
+      <span class="rv">66%</span>
     </div>
     <div class="row" style="animation: slideRow 0.5s ease-out 0.35s both;">
       <span class="rl hl">Languages</span>
-      <span class="pv">2</span>
+      <span class="pv">5</span>
     </div>
     <div class="row" style="animation: slideRow 0.5s ease-out 0.5s both;">
       <span class="rl hl">Maturity</span>
       <span class="pv">1.5y</span>
     </div>
           <div class="gg">
-    <div class="gb" style="background:#EC489915;border-color:#EC489944;animation:fadeIn 0.4s ease-out 0.3s both;">
-      <span class="gl" style="color:#EC4899">C+</span>
+    <div class="gb" style="background:#3B82F615;border-color:#3B82F644;animation:fadeIn 0.4s ease-out 0.3s both;">
+      <span class="gl" style="color:#3B82F6">A</span>
       <span class="gln">Overall</span>
     </div>
-    <div class="gb" style="background:#6B728015;border-color:#6B728044;animation:fadeIn 0.4s ease-out 0.38s both;">
-      <span class="gl" style="color:#6B7280">C</span>
+    <div class="gb" style="background:#3B82F615;border-color:#3B82F644;animation:fadeIn 0.4s ease-out 0.38s both;">
+      <span class="gl" style="color:#3B82F6">A</span>
       <span class="gln">Activity</span>
     </div>
-    <div class="gb" style="background:#8B5CF615;border-color:#8B5CF644;animation:fadeIn 0.4s ease-out 0.46s both;">
-      <span class="gl" style="color:#8B5CF6">B+</span>
+    <div class="gb" style="background:#10B98115;border-color:#10B98144;animation:fadeIn 0.4s ease-out 0.46s both;">
+      <span class="gl" style="color:#10B981">A+</span>
       <span class="gln">Depth</span>
     </div>
-    <div class="gb" style="background:#8B5CF615;border-color:#8B5CF644;animation:fadeIn 0.4s ease-out 0.54s both;">
-      <span class="gl" style="color:#8B5CF6">B+</span>
+    <div class="gb" style="background:#FFD70015;border-color:#FFD70044;animation:fadeIn 0.4s ease-out 0.54s both;">
+      <span class="gl" style="color:#FFD700">S</span>
       <span class="gln">Breadth</span>
     </div></div>
         </div>
         <div class="sc sf">
           <h2>Stack</h2>
-          <div class="nc"><span class="nn" style="border-left-color:#3B82F6"><span class="nnd" style="background:#3B82F6"></span><span class="nnn">Jupyter Notebook</span><span class="nnp">0%</span></span><span class="na" style="color:#3B82F666">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">20%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">63%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#2088FF"><span class="nnd" style="background:#2088FF"></span><span class="nnn">GitHub Actions</span><span class="nnp">10%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#F7DF1E"><span class="nnd" style="background:#F7DF1E"></span><span class="nnn">JavaScript</span><span class="nnp">37%</span></span><span class="na" style="color:#F7DF1E66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">30%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">20%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">30%</span></span></div>
+          <div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">57.7%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">17%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#F7DF1E"><span class="nnd" style="background:#F7DF1E"></span><span class="nnn">JavaScript</span><span class="nnp">33.9%</span></span><span class="na" style="color:#F7DF1E66">→</span><span class="nn" style="border-left-color:#37814A"><span class="nnd" style="background:#37814A"></span><span class="nnn">Celery</span><span class="nnp">24%</span></span><span class="na" style="color:#37814A66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">33%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#61DAFB"><span class="nnd" style="background:#61DAFB"></span><span class="nnn">React</span><span class="nnp">33%</span></span><span class="na" style="color:#61DAFB66">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">25%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#3ECF8E"><span class="nnd" style="background:#3ECF8E"></span><span class="nnn">Supabase</span><span class="nnp">13%</span></span><span class="na" style="color:#3ECF8E66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">33%</span></span><span class="na" style="color:#33679166">→</span><span class="nn" style="border-left-color:#DC382D"><span class="nnd" style="background:#DC382D"></span><span class="nnn">Redis</span><span class="nnp">24%</span></span></div>
         </div>
       </div>
+      <div style="height:20px"></div>
       <div class="footer">
         <span>Updated Jul 2026</span>
-        <span>GitHub Actions · engineering-insights</span>
+        <span>GitHub Actions · profile-analytics</span>
       </div>
     </div>
   </foreignObject>
