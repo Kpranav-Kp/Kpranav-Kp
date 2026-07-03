@@ -1,20 +1,20 @@
 {
   "generated": "Jul 2026",
-  "generated_iso": "2026-07-02T07:18:21Z",
+  "generated_iso": "2026-07-03T04:50:24Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 61.6,
-      "repos": 7,
+      "percentage": 63.0,
+      "repos": 8,
       "color": "#3776AB",
-      "trend": 0.0
+      "trend": 1.4
     },
     {
       "name": "JavaScript",
-      "percentage": 38.4,
+      "percentage": 37.0,
       "repos": 5,
       "color": "#F7DF1E",
-      "trend": 0.0
+      "trend": -1.4
     }
   ],
   "technologies": [
@@ -22,31 +22,31 @@
       "name": "PostgreSQL",
       "percentage": 30.0,
       "score": 1.0,
-      "level": "Expert",
+      "level": "Advanced",
       "level_color": "#10B981",
       "color": "#336791"
-    },
-    {
-      "name": "Django",
-      "percentage": 30.0,
-      "score": 1.0,
-      "level": "Expert",
-      "level_color": "#10B981",
-      "color": "#0C4B33"
     },
     {
       "name": "React",
       "percentage": 30.0,
       "score": 1.0,
-      "level": "Expert",
+      "level": "Advanced",
       "level_color": "#10B981",
       "color": "#61DAFB"
     },
     {
+      "name": "Django",
+      "percentage": 30.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#10B981",
+      "color": "#0C4B33"
+    },
+    {
       "name": "Python",
-      "percentage": 61.6,
-      "score": 0.846,
-      "level": "Expert",
+      "percentage": 63.0,
+      "score": 0.852,
+      "level": "Advanced",
       "level_color": "#10B981",
       "color": "#3776AB"
     },
@@ -54,7 +54,7 @@
       "name": "Docker",
       "percentage": 20.0,
       "score": 0.733,
-      "level": "Advanced",
+      "level": "Intermediate",
       "level_color": "#3B82F6",
       "color": "#2496ED"
     },
@@ -62,7 +62,7 @@
       "name": "FastAPI",
       "percentage": 20.0,
       "score": 0.733,
-      "level": "Advanced",
+      "level": "Intermediate",
       "level_color": "#3B82F6",
       "color": "#059669"
     }
@@ -90,13 +90,13 @@
   "profile": {
     "active_pct": 20,
     "languages_count": 2,
-    "maturity": 0.7,
+    "maturity": 1.5,
     "grades": [
       {
         "label": "Overall",
-        "grade": "B",
-        "score": 50,
-        "color": "#F59E0B"
+        "grade": "C+",
+        "score": 46,
+        "color": "#EC4899"
       },
       {
         "label": "Activity",
@@ -106,9 +106,9 @@
       },
       {
         "label": "Depth",
-        "grade": "S",
-        "score": 100,
-        "color": "#FFD700"
+        "grade": "B+",
+        "score": 67,
+        "color": "#8B5CF6"
       },
       {
         "label": "Breadth",

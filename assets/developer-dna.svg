@@ -88,37 +88,37 @@
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.15s both;">
       <div class="tca" style="background:#10B981"></div>
       <span class="tcn">PostgreSQL</span>
-      <span class="tcl" style="color:#10B981">Expert</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.25s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">Django</span>
-      <span class="tcl" style="color:#10B981">Expert</span>
+      <span class="tcn">React</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.5s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.35s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">React</span>
-      <span class="tcl" style="color:#10B981">Expert</span>
+      <span class="tcn">Django</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.6s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.45s both;">
       <div class="tca" style="background:#10B981"></div>
       <span class="tcn">Python</span>
-      <span class="tcl" style="color:#10B981">Expert</span>
-      <div class="tcb"><div class="bar" style="width:61.6%;background:#10B981;animation-delay:0.7s"></div></div>
+      <span class="tcl" style="color:#10B981">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:63.0%;background:#10B981;animation-delay:0.7s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.55s both;">
       <div class="tca" style="background:#3B82F6"></div>
       <span class="tcn">Docker</span>
-      <span class="tcl" style="color:#3B82F6">Advanced</span>
+      <span class="tcl" style="color:#3B82F6">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:20.0%;background:#3B82F6;animation-delay:0.8s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.65s both;">
       <div class="tca" style="background:#3B82F6"></div>
       <span class="tcn">FastAPI</span>
-      <span class="tcl" style="color:#3B82F6">Advanced</span>
+      <span class="tcl" style="color:#3B82F6">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:20.0%;background:#3B82F6;animation-delay:0.9s"></div></div>
     </div></div>
         </div>
@@ -158,19 +158,19 @@
     </div>
     <div class="row" style="animation: slideRow 0.5s ease-out 0.5s both;">
       <span class="rl hl">Maturity</span>
-      <span class="pv">0.7y</span>
+      <span class="pv">1.5y</span>
     </div>
           <div class="gg">
-    <div class="gb" style="background:#F59E0B15;border-color:#F59E0B44;animation:fadeIn 0.4s ease-out 0.3s both;">
-      <span class="gl" style="color:#F59E0B">B</span>
+    <div class="gb" style="background:#EC489915;border-color:#EC489944;animation:fadeIn 0.4s ease-out 0.3s both;">
+      <span class="gl" style="color:#EC4899">C+</span>
       <span class="gln">Overall</span>
     </div>
     <div class="gb" style="background:#6B728015;border-color:#6B728044;animation:fadeIn 0.4s ease-out 0.38s both;">
       <span class="gl" style="color:#6B7280">C</span>
       <span class="gln">Activity</span>
     </div>
-    <div class="gb" style="background:#FFD70015;border-color:#FFD70044;animation:fadeIn 0.4s ease-out 0.46s both;">
-      <span class="gl" style="color:#FFD700">S</span>
+    <div class="gb" style="background:#8B5CF615;border-color:#8B5CF644;animation:fadeIn 0.4s ease-out 0.46s both;">
+      <span class="gl" style="color:#8B5CF6">B+</span>
       <span class="gln">Depth</span>
     </div>
     <div class="gb" style="background:#8B5CF615;border-color:#8B5CF644;animation:fadeIn 0.4s ease-out 0.54s both;">
@@ -179,8 +179,8 @@
     </div></div>
         </div>
         <div class="sc sf">
-          <h2>Technology Network</h2>
-          <div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">61.6%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">30%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">30%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#F7DF1E"><span class="nnd" style="background:#F7DF1E"></span><span class="nnn">JavaScript</span><span class="nnp">38.4%</span></span><span class="na" style="color:#F7DF1E66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">30%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">20%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">30%</span></span></div>
+          <h2>Stack</h2>
+          <div class="nc"><span class="nn" style="border-left-color:#3B82F6"><span class="nnd" style="background:#3B82F6"></span><span class="nnn">Jupyter Notebook</span><span class="nnp">0%</span></span><span class="na" style="color:#3B82F666">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">20%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">63%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#2088FF"><span class="nnd" style="background:#2088FF"></span><span class="nnn">GitHub Actions</span><span class="nnp">10%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#F7DF1E"><span class="nnd" style="background:#F7DF1E"></span><span class="nnn">JavaScript</span><span class="nnp">37%</span></span><span class="na" style="color:#F7DF1E66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">30%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">20%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">30%</span></span></div>
         </div>
       </div>
       <div class="footer">
