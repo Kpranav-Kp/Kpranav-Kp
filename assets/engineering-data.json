@@ -1,0 +1,121 @@
+{
+  "generated": "Jul 2026",
+  "generated_iso": "2026-07-02T07:18:21Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 61.6,
+      "repos": 7,
+      "color": "#3776AB",
+      "trend": 0.0
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 38.4,
+      "repos": 5,
+      "color": "#F7DF1E",
+      "trend": 0.0
+    }
+  ],
+  "technologies": [
+    {
+      "name": "PostgreSQL",
+      "percentage": 30.0,
+      "score": 1.0,
+      "level": "Expert",
+      "level_color": "#10B981",
+      "color": "#336791"
+    },
+    {
+      "name": "Django",
+      "percentage": 30.0,
+      "score": 1.0,
+      "level": "Expert",
+      "level_color": "#10B981",
+      "color": "#0C4B33"
+    },
+    {
+      "name": "React",
+      "percentage": 30.0,
+      "score": 1.0,
+      "level": "Expert",
+      "level_color": "#10B981",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Python",
+      "percentage": 61.6,
+      "score": 0.846,
+      "level": "Expert",
+      "level_color": "#10B981",
+      "color": "#3776AB"
+    },
+    {
+      "name": "Docker",
+      "percentage": 20.0,
+      "score": 0.733,
+      "level": "Advanced",
+      "level_color": "#3B82F6",
+      "color": "#2496ED"
+    },
+    {
+      "name": "FastAPI",
+      "percentage": 20.0,
+      "score": 0.733,
+      "level": "Advanced",
+      "level_color": "#3B82F6",
+      "color": "#059669"
+    }
+  ],
+  "complexity": [
+    {
+      "label": "Small",
+      "percentage": 50.0,
+      "count": 5,
+      "color": "#10B981"
+    },
+    {
+      "label": "Medium",
+      "percentage": 50.0,
+      "count": 5,
+      "color": "#F59E0B"
+    },
+    {
+      "label": "Large",
+      "percentage": 0.0,
+      "count": 0,
+      "color": "#EF4444"
+    }
+  ],
+  "profile": {
+    "active_pct": 20,
+    "languages_count": 2,
+    "maturity": 0.7,
+    "grades": [
+      {
+        "label": "Overall",
+        "grade": "B",
+        "score": 50,
+        "color": "#F59E0B"
+      },
+      {
+        "label": "Activity",
+        "grade": "C",
+        "score": 20,
+        "color": "#6B7280"
+      },
+      {
+        "label": "Depth",
+        "grade": "S",
+        "score": 100,
+        "color": "#FFD700"
+      },
+      {
+        "label": "Breadth",
+        "grade": "B+",
+        "score": 68,
+        "color": "#8B5CF6"
+      }
+    ]
+  }
+}

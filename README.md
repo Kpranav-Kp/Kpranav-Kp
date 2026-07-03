@@ -118,10 +118,10 @@
 
 <img width="100%" height="3" src="assets/divider.svg"/>
 
-## Github Analytics
+## Engineering Insights
 
 <div align="center">
-  <img src="assets/developer-dna.svg" width="90%" alt="Developer DNA" />
+  <img src="assets/developer-dna.svg" width="90%" alt="Engineering Insights" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>
