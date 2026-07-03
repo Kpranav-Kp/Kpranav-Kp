@@ -87,19 +87,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.15s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.25s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.5s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.35s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:30.0%;background:#10B981;animation-delay:0.6s"></div></div>
     </div>

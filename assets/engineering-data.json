@@ -1,31 +1,23 @@
 {
   "generated": "Jul 2026",
-  "generated_iso": "2026-07-03T04:50:24Z",
+  "generated_iso": "2026-07-03T04:58:47Z",
   "languages": [
     {
       "name": "Python",
       "percentage": 63.0,
       "repos": 8,
       "color": "#3776AB",
-      "trend": 1.4
+      "trend": 0.0
     },
     {
       "name": "JavaScript",
       "percentage": 37.0,
       "repos": 5,
       "color": "#F7DF1E",
-      "trend": -1.4
+      "trend": 0.0
     }
   ],
   "technologies": [
-    {
-      "name": "PostgreSQL",
-      "percentage": 30.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#336791"
-    },
     {
       "name": "React",
       "percentage": 30.0,
@@ -41,6 +33,14 @@
       "level": "Advanced",
       "level_color": "#10B981",
       "color": "#0C4B33"
+    },
+    {
+      "name": "PostgreSQL",
+      "percentage": 30.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#10B981",
+      "color": "#336791"
     },
     {
       "name": "Python",
