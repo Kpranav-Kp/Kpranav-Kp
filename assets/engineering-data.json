@@ -1,52 +1,44 @@
 {
   "generated": "Jul 2026",
-  "generated_iso": "2026-07-03T06:01:08Z",
+  "generated_iso": "2026-07-06T10:48:14Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 57.7,
+      "percentage": 57.9,
       "repos": 8,
       "color": "#3776AB",
-      "trend": -5.3
+      "trend": 0.2
     },
     {
       "name": "JavaScript",
-      "percentage": 33.9,
+      "percentage": 33.7,
       "repos": 5,
       "color": "#F7DF1E",
-      "trend": -3.1
+      "trend": -0.2
     },
     {
       "name": "HTML",
       "percentage": 5.5,
       "repos": 6,
       "color": "#3B82F6",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "CSS",
       "percentage": 2.9,
       "repos": 5,
       "color": "#3B82F6",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "Dockerfile",
       "percentage": 0.0,
       "repos": 1,
       "color": "#3B82F6",
-      "trend": null
+      "trend": 0.0
     }
   ],
   "technologies": [
-    {
-      "name": "Django",
-      "percentage": 33.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#0C4B33"
-    },
     {
       "name": "PostgreSQL",
       "percentage": 33.0,
@@ -64,9 +56,17 @@
       "color": "#61DAFB"
     },
     {
+      "name": "Django",
+      "percentage": 33.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#10B981",
+      "color": "#0C4B33"
+    },
+    {
       "name": "Python",
-      "percentage": 57.7,
-      "score": 0.831,
+      "percentage": 57.9,
+      "score": 0.832,
       "level": "Advanced",
       "level_color": "#10B981",
       "color": "#3776AB"
@@ -74,7 +74,7 @@
     {
       "name": "Docker",
       "percentage": 25.0,
-      "score": 0.819,
+      "score": 0.82,
       "level": "Intermediate",
       "level_color": "#3B82F6",
       "color": "#2496ED"
@@ -82,7 +82,7 @@
     {
       "name": "Celery",
       "percentage": 24.0,
-      "score": 0.781,
+      "score": 0.782,
       "level": "Intermediate",
       "level_color": "#3B82F6",
       "color": "#37814A"

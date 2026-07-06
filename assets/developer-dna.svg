@@ -87,19 +87,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.15s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.25s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.5s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.35s both;">
       <div class="tca" style="background:#10B981"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
       <div class="tcb"><div class="bar" style="width:33.0%;background:#10B981;animation-delay:0.6s"></div></div>
     </div>
@@ -107,7 +107,7 @@
       <div class="tca" style="background:#10B981"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#10B981">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:57.7%;background:#10B981;animation-delay:0.7s"></div></div>
+      <div class="tcb"><div class="bar" style="width:57.9%;background:#10B981;animation-delay:0.7s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.55s both;">
       <div class="tca" style="background:#3B82F6"></div>
@@ -180,7 +180,7 @@
         </div>
         <div class="sc sf">
           <h2>Stack</h2>
-          <div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">57.7%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">17%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#F7DF1E"><span class="nnd" style="background:#F7DF1E"></span><span class="nnn">JavaScript</span><span class="nnp">33.9%</span></span><span class="na" style="color:#F7DF1E66">→</span><span class="nn" style="border-left-color:#37814A"><span class="nnd" style="background:#37814A"></span><span class="nnn">Celery</span><span class="nnp">24%</span></span><span class="na" style="color:#37814A66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">33%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#61DAFB"><span class="nnd" style="background:#61DAFB"></span><span class="nnn">React</span><span class="nnp">33%</span></span><span class="na" style="color:#61DAFB66">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">25%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#3ECF8E"><span class="nnd" style="background:#3ECF8E"></span><span class="nnn">Supabase</span><span class="nnp">13%</span></span><span class="na" style="color:#3ECF8E66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">33%</span></span><span class="na" style="color:#33679166">→</span><span class="nn" style="border-left-color:#DC382D"><span class="nnd" style="background:#DC382D"></span><span class="nnn">Redis</span><span class="nnp">24%</span></span></div>
+          <div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">57.9%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">16%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">57.9%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#37814A"><span class="nnd" style="background:#37814A"></span><span class="nnn">Celery</span><span class="nnp">24%</span></span><span class="na" style="color:#37814A66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">33%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#61DAFB"><span class="nnd" style="background:#61DAFB"></span><span class="nnn">React</span><span class="nnp">33%</span></span><span class="na" style="color:#61DAFB66">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">25%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#3ECF8E"><span class="nnd" style="background:#3ECF8E"></span><span class="nnn">Supabase</span><span class="nnp">14%</span></span><span class="na" style="color:#3ECF8E66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">33%</span></span><span class="na" style="color:#33679166">→</span><span class="nn" style="border-left-color:#DC382D"><span class="nnd" style="background:#DC382D"></span><span class="nnn">Redis</span><span class="nnp">24%</span></span></div>
         </div>
       </div>
       <div style="height:20px"></div>
