@@ -187,18 +187,18 @@
     </div>
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
       <span class="sl">Lines added</span>
-      <span class="sv" style="color:#34D399">228.7k</span>
+      <span class="sv" style="color:#34D399">228.8k</span>
       <span class="sd">~22.9k/repo</span>
     </div>
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
       <span class="sl">Lines deleted</span>
-      <span class="sv" style="color:#F43F5E">102.4k</span>
-      <span class="sd">~10.2k/repo</span>
+      <span class="sv" style="color:#F43F5E">102.7k</span>
+      <span class="sd">~10.3k/repo</span>
     </div>
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
       <span class="sl">Commits / week</span>
       <span class="sv" style="color:#6366F1">7.1</span>
-      <span class="sd">297 lifetime</span>
+      <span class="sd">298 lifetime</span>
     </div>
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
       <span class="sl">Peak hours</span>
@@ -288,8 +288,8 @@
       <span class="am">Jul</span>
     </div>
     <div class="ab" style="animation: slideUp 0.5s ease-out 0.7s both">
-      <span class="ac">5</span>
-      <div class="abar" style="height:8%">
+      <span class="ac">6</span>
+      <div class="abar" style="height:10%">
         <div class="afill" style="animation-delay:0.95s;"></div>
       </div>
       <span class="am">Aug</span>

@@ -1,48 +1,48 @@
 {
   "generated": "Aug 2026",
-  "generated_iso": "2026-08-08T20:40:49Z",
+  "generated_iso": "2026-08-08T20:43:33Z",
   "languages": [
     {
       "name": "Python",
       "percentage": 58.3,
       "repos": 8,
       "color": "#6366F1",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "JavaScript",
       "percentage": 32.9,
       "repos": 5,
       "color": "#38BDF8",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "CSS",
       "percentage": 6.4,
       "repos": 5,
       "color": "#A78BFA",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "HTML",
       "percentage": 2.1,
       "repos": 6,
       "color": "#FBBF24",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "Dockerfile",
       "percentage": 0.1,
       "repos": 2,
       "color": "#94A3B8",
-      "trend": null
+      "trend": 0.0
     },
     {
       "name": "Shell",
       "percentage": 0.1,
       "repos": 1,
       "color": "#6366F1",
-      "trend": null
+      "trend": 0.0
     }
   ],
   "technologies": [
@@ -113,9 +113,9 @@
     "current_streak": 2,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-    "lines_added": 228744,
-    "lines_deleted": 102378,
-    "total_commits": 297,
+    "lines_added": 228778,
+    "lines_deleted": 102657,
+    "total_commits": 298,
     "commit_frequency": 7.1,
     "peak_hour": "11 PM",
     "peak_day": "Saturday",
@@ -194,8 +194,8 @@
     },
     {
       "month": "Aug",
-      "commit": 5,
-      "pct": 8
+      "commit": 6,
+      "pct": 10
     }
   ]
 }
