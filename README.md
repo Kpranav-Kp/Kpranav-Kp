@@ -116,7 +116,7 @@
 ## 📊 Profile Analytics
 
 <div align="center">
-  <img src="assets/developer-dna.svg" width="100%" style="max-width:900px;height:auto" alt="Profile Analytics" />
+  <img src="assets/developer-dna.svg?v=3" width="100%" style="max-width:900px;height:auto" alt="Profile Analytics" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>

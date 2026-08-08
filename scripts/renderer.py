@@ -205,12 +205,7 @@ def render_svg(data):
         }}
         h1 {{
           font-size: 20px; font-weight: 700; text-align: center; letter-spacing: -0.3px;
-          margin-bottom: 16px;
-          background: linear-gradient(90deg, var(--text), var(--accent), var(--sky), var(--text));
-          background-size: 300% 100%;
-          -webkit-background-clip: text; background-clip: text;
-          -webkit-text-fill-color: transparent; color: transparent;
-          animation: sheenTitle 8s ease-in-out infinite;
+          margin-bottom: 16px; color: var(--text);
         }}
         .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }}
         .sc {{
@@ -257,14 +252,12 @@ def render_svg(data):
         @keyframes fadeIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
         @keyframes slideUp {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
         @keyframes slideRow {{ from {{ opacity: 0; transform: translateX(-6px); }} to {{ opacity: 1; transform: translateX(0); }} }}
-        @keyframes sheenTitle {{ 0% {{ background-position: 0% 50%; }} 50% {{ background-position: 100% 50%; }} 100% {{ background-position: 0% 50%; }} }}
         @keyframes ringPulse {{ 0%, 100% {{ opacity: 0.12; }} 50% {{ opacity: 0.28; }} }}
         @keyframes cardGlow {{
           0%, 100% {{ box-shadow: 0 0 18px 0 rgba(99,102,241,0.10), var(--shadow); }}
           50% {{ box-shadow: 0 0 30px 2px rgba(14,165,233,0.18), var(--shadow); }}
         }}
-        .sv {{ animation: slowPulse 2.6s ease-in-out infinite; }}
-        @keyframes slowPulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.62; }} }}
+        .sv {{ color: var(--text); }}
         .city polygon {{ will-change: opacity; }}
         .city polygon:nth-of-type(3n) {{ filter: brightness(1.05); }}
         @media (max-width: 500px) {{
