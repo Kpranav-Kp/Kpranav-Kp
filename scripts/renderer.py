@@ -71,11 +71,10 @@ def _build_city(activity):
     for r in activity:
         labels += f'<span class="am">{r["month"]}</span>'
 
-    return f"""<svg class="city" viewBox="0 0 {W:.1f} {H:.1f}" preserveAspectRatio="xMidYMin meet">
+    return f"""<svg class="city" viewBox="0 0 {W:.1f} {H:.1f}" preserveAspectRatio="xMidYMin meet">  
   <style>
-    .city .cube {{ opacity: 0; animation: cubeUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards, cityPulse 5s ease-in-out 1.2s infinite; }}
+    .city .cube {{ opacity: 1; animation: cityPulse 5s ease-in-out 1.2s infinite; }}
     .city {{ display: block; width: 100%; }}
-    @keyframes cubeUp {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: translateY(0); }} }}
     @keyframes cityPulse {{ 0%, 100% {{ filter: brightness(1); }} 50% {{ filter: brightness(1.14); }} }}
     @media (prefers-reduced-motion: reduce) {{ .city .cube {{ opacity: 1; animation: none !important; }} }}
   </style>

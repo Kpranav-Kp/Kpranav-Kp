@@ -1,14 +1,10 @@
 {
   "generated": "Aug 2026",
-<<<<<<< HEAD
-  "generated_iso": "2026-08-08T21:07:25Z",
-=======
-  "generated_iso": "2026-08-08T20:43:33Z",
->>>>>>> 20ae2f8371a302572c69a4ec0bb65f698e15130e
+  "generated_iso": "2026-08-08T21:29:39Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 58.3,
+      "percentage": 58.4,
       "repos": 8,
       "color": "#6366F1",
       "trend": 0.0
@@ -73,8 +69,8 @@
     },
     {
       "name": "Python",
-      "percentage": 58.3,
-      "score": 0.833,
+      "percentage": 58.4,
+      "score": 0.834,
       "level": "Advanced",
       "level_color": "#6366F1"
     },
@@ -86,7 +82,7 @@
       "level_color": "#38BDF8"
     },
     {
-      "name": "Redis",
+      "name": "Celery",
       "percentage": 23.0,
       "score": 0.786,
       "level": "Intermediate",
@@ -117,18 +113,12 @@
     "current_streak": 2,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-<<<<<<< HEAD
-    "lines_added": 228796,
-    "lines_deleted": 102675,
-    "total_commits": 299,
-=======
-    "lines_added": 228778,
-    "lines_deleted": 102657,
-    "total_commits": 298,
->>>>>>> 20ae2f8371a302572c69a4ec0bb65f698e15130e
-    "commit_frequency": 7.1,
+    "lines_added": 229170,
+    "lines_deleted": 102888,
+    "total_commits": 301,
+    "commit_frequency": 7.2,
     "peak_hour": "11 PM",
-    "peak_day": "Saturday",
+    "peak_day": "Sunday",
     "languages_count": 7,
     "habits": [
       {
@@ -204,13 +194,8 @@
     },
     {
       "month": "Aug",
-<<<<<<< HEAD
-      "commit": 7,
-      "pct": 11
-=======
-      "commit": 6,
-      "pct": 10
->>>>>>> 20ae2f8371a302572c69a4ec0bb65f698e15130e
+      "commit": 9,
+      "pct": 14
     }
   ]
 }

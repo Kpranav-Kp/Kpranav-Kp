@@ -145,7 +145,7 @@
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:58.3%;background:#6366F1;animation-delay:0.64s"></div></div>
+      <div class="tcb"><div class="bar" style="width:58.4%;background:#6366F1;animation-delay:0.64s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
@@ -155,7 +155,7 @@
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
-      <span class="tcn">Redis</span>
+      <span class="tcn">Celery</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:23.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
     </div></div>
@@ -185,7 +185,6 @@
         <div class="sc">
           <h2>Profile</h2>
           <div class="grid2">
-<<<<<<< HEAD
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.15s both">
           <span class="sl">Current streak</span>
           <span class="sv" style="color:#34D399">2<span class="su">days</span></span>
@@ -198,66 +197,32 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
           <span class="sl">Lines added</span>
-          <span class="sv" style="color:#34D399">228.8k</span>
+          <span class="sv" style="color:#34D399">229.2k</span>
           <span class="sd">~22.9k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
-          <span class="sv" style="color:#F43F5E">102.7k</span>
+          <span class="sv" style="color:#F43F5E">102.9k</span>
           <span class="sd">~10.3k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
-          <span class="sv" style="color:#6366F1">7.1</span>
-          <span class="sd">299 lifetime</span>
+          <span class="sv" style="color:#6366F1">7.2</span>
+          <span class="sd">301 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
           <span class="sv" style="color:#0EA5E9">11 PM</span>
-          <span class="sd">Saturday</span>
+          <span class="sd">Sunday</span>
         </div></div>
-=======
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.15s both">
-      <span class="sl">Current streak</span>
-      <span class="sv" style="color:#34D399">2<span class="su">days</span></span>
-      
-    </div>
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.21s both">
-      <span class="sl">Longest streak</span>
-      <span class="sv" style="color:#6366F1">9<span class="su">days</span></span>
-      <span class="sd">Feb 20 – 28, 2026</span>
-    </div>
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
-      <span class="sl">Lines added</span>
-      <span class="sv" style="color:#34D399">228.8k</span>
-      <span class="sd">~22.9k/repo</span>
-    </div>
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
-      <span class="sl">Lines deleted</span>
-      <span class="sv" style="color:#F43F5E">102.7k</span>
-      <span class="sd">~10.3k/repo</span>
-    </div>
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
-      <span class="sl">Commits / week</span>
-      <span class="sv" style="color:#6366F1">7.1</span>
-      <span class="sd">298 lifetime</span>
-    </div>
-    <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
-      <span class="sl">Peak hours</span>
-      <span class="sv" style="color:#0EA5E9">11 PM</span>
-      <span class="sd">Saturday</span>
-    </div></div>
->>>>>>> 20ae2f8371a302572c69a4ec0bb65f698e15130e
           <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#94A3B8;border-color:#94A3B855;background:#94A3B811">Weekend warrior</span></div>
         </div>
         <div class="sc sf">
           <h2>Commit Activity · Last 12 Months</h2>
-<<<<<<< HEAD
-          <svg class="city" viewBox="0 0 1334.8 955.0" preserveAspectRatio="xMidYMin meet">
+          <svg class="city" viewBox="0 0 1334.8 955.0" preserveAspectRatio="xMidYMin meet">  
   <style>
-    .city .cube { opacity: 0; animation: cubeUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards, cityPulse 5s ease-in-out 1.2s infinite; }
+    .city .cube { opacity: 1; animation: cityPulse 5s ease-in-out 1.2s infinite; }
     .city { display: block; width: 100%; }
-    @keyframes cubeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes cityPulse { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.14); } }
     @media (prefers-reduced-motion: reduce) { .city .cube { opacity: 1; animation: none !important; } }
   </style>
@@ -267,93 +232,6 @@
 </svg>
 <div class="ml"><span class="am">Sep</span><span class="am">Oct</span><span class="am">Nov</span><span class="am">Dec</span><span class="am">Jan</span><span class="am">Feb</span><span class="am">Mar</span><span class="am">Apr</span><span class="am">May</span><span class="am">Jun</span><span class="am">Jul</span><span class="am">Aug</span></div>
           <div class="legend">cube height = commits / month</div>
-=======
-          <div class="act">
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.15s both">
-      <span class="ac">2</span>
-      <div class="abar" style="height:3%">
-        <div class="afill" style="animation-delay:0.4s;"></div>
-      </div>
-      <span class="am">Sep</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.2s both">
-      <span class="ac">39</span>
-      <div class="abar" style="height:62%">
-        <div class="afill" style="animation-delay:0.45s;"></div>
-      </div>
-      <span class="am">Oct</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.25s both">
-      <span class="ac">13</span>
-      <div class="abar" style="height:21%">
-        <div class="afill" style="animation-delay:0.5s;"></div>
-      </div>
-      <span class="am">Nov</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.3s both">
-      <span class="ac">19</span>
-      <div class="abar" style="height:30%">
-        <div class="afill" style="animation-delay:0.55s;"></div>
-      </div>
-      <span class="am">Dec</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.35s both">
-      <span class="ac">5</span>
-      <div class="abar" style="height:8%">
-        <div class="afill" style="animation-delay:0.6s;"></div>
-      </div>
-      <span class="am">Jan</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.4s both">
-      <span class="ac">20</span>
-      <div class="abar" style="height:32%">
-        <div class="afill" style="animation-delay:0.65s;"></div>
-      </div>
-      <span class="am">Feb</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.45s both">
-      <span class="ac">22</span>
-      <div class="abar" style="height:35%">
-        <div class="afill" style="animation-delay:0.7s;"></div>
-      </div>
-      <span class="am">Mar</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.5s both">
-      <span class="ac">63</span>
-      <div class="abar" style="height:100%">
-        <div class="afill" style="animation-delay:0.75s;box-shadow:0 0 12px rgba(14,165,233,0.55);"></div>
-      </div>
-      <span class="am">Apr</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.55s both">
-      <span class="ac">17</span>
-      <div class="abar" style="height:27%">
-        <div class="afill" style="animation-delay:0.8s;"></div>
-      </div>
-      <span class="am">May</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.6s both">
-      <span class="ac">14</span>
-      <div class="abar" style="height:22%">
-        <div class="afill" style="animation-delay:0.85s;"></div>
-      </div>
-      <span class="am">Jun</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.65s both">
-      <span class="ac">54</span>
-      <div class="abar" style="height:86%">
-        <div class="afill" style="animation-delay:0.9s;"></div>
-      </div>
-      <span class="am">Jul</span>
-    </div>
-    <div class="ab" style="animation: slideUp 0.5s ease-out 0.7s both">
-      <span class="ac">6</span>
-      <div class="abar" style="height:10%">
-        <div class="afill" style="animation-delay:0.95s;"></div>
-      </div>
-      <span class="am">Aug</span>
-    </div></div>
->>>>>>> 20ae2f8371a302572c69a4ec0bb65f698e15130e
         </div>
       </div>
       <div style="height:20px"></div>

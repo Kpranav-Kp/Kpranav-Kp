@@ -51,6 +51,8 @@
 
 <div align="center">
 
+<div style="display:inline-block;max-width:900px;width:100%;padding:18px;border:1px solid rgba(99,102,241,0.18);border-radius:18px;background:linear-gradient(135deg,rgba(99,102,241,0.06),rgba(14,165,233,0.05),rgba(52,211,153,0.04));box-shadow:0 0 24px rgba(99,102,241,0.16),0 0 46px rgba(14,165,233,0.10),inset 0 0 18px rgba(99,102,241,0.04);">
+
 <table width="100%">
 <tr>
 <td align="center" valign="top">
@@ -106,6 +108,7 @@
 </tr>
 </table>
 
+</div>
 </div>
 
 <img width="100%" height="3" src="assets/divider.svg"/>
