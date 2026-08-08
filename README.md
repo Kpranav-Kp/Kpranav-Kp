@@ -4,6 +4,8 @@
 
 ### Full Stack Engineer • AI/ML Engineer • Backend Systems
 
+<img src="assets/live-status.svg" width="100%" style="max-width:440px;height:auto" alt="Kpranav-Kp status"/>
+
 </div>
 
 <img width="100%" height="3" src="assets/divider.svg"/>
@@ -26,10 +28,6 @@
 <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white"/>
 </p>
 
-<a href="https://github.com/Kpranav-Kp/repo-insight">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Kpranav-Kp&repo=repo-insight&theme=transparent&hide_border=true"/>
-</a>
-
 </td>
 
 <td width="50%" valign="top">
@@ -43,10 +41,6 @@
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
 <img src="https://img.shields.io/badge/Transformers-FFD21E?style=flat-square"/>
 </p>
-
-<a href="https://github.com/Kpranav-Kp/lang-guardX">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Kpranav-Kp&repo=lang-guardX&theme=transparent&hide_border=true"/>
-</a>
 
 </td>
 
@@ -121,7 +115,7 @@
 ## 📊 Profile Analytics
 
 <div align="center">
-  <img src="assets/developer-dna.svg" width="90%" alt="Profile Analytics" />
+  <img src="assets/developer-dna.svg" width="100%" style="max-width:900px;height:auto" alt="Profile Analytics" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>

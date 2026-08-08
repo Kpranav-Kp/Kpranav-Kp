@@ -10,7 +10,7 @@ if env_path.exists():
             k, v = line.split("=", 1)
             os.environ.setdefault(k.strip(), v.strip())
 
-from github_api import fetch_repos, fetch_topics, fetch_languages, fetch_repo_contents, fetch_releases, fetch_commit_count
+from github_api import fetch_repos, fetch_topics, fetch_languages, fetch_repo_contents, fetch_releases, fetch_commit_history, fetch_commit_stats
 from analytics import compute
 from renderer import render_svg
 
@@ -26,7 +26,8 @@ def main():
     fetched_langs = {}
     fetched_contents = {}
     fetched_releases = {}
-    fetched_commits = {}
+    fetched_commit_dates = {}
+    fetched_commit_stats = {}
 
     for repo in repos:
         if repo.get("fork", False):
@@ -36,7 +37,8 @@ def main():
         fetched_langs[key] = fetch_languages(repo["languages_url"])
         fetched_contents[key] = fetch_repo_contents(repo["contents_url"])
         fetched_releases[key] = fetch_releases(repo["releases_url"])
-        fetched_commits[key] = fetch_commit_count(repo["full_name"])
+        fetched_commit_dates[key] = [c.get("date") for c in fetch_commit_history(repo) if c.get("date")]
+        fetched_commit_stats[key] = fetch_commit_stats(repo)
 
     old_data = None
     if os.path.exists(DATA_FILE):
@@ -46,7 +48,7 @@ def main():
         except Exception:
             pass
 
-    data = compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, fetched_commits, old_data)
+    data = compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, fetched_commit_dates, fetched_commit_stats, old_data)
 
     svg = render_svg(data)
 
@@ -54,9 +56,8 @@ def main():
     with open(OUTPUT_SVG, "w", encoding="utf-8") as f:
         f.write(svg)
 
-    data_out = {k: v for k, v in data.items() if k != "network"}
     with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data_out, f, indent=2)
+        json.dump(data, f, indent=2)
 
     print("Profile Analytics SVG generated successfully.")
 

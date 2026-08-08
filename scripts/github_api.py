@@ -1,12 +1,28 @@
 import os
+import time
 import requests
+from concurrent.futures import ThreadPoolExecutor
 
 GH_TOKEN = os.getenv("GH_TOKEN")
 GITHUB_USERNAME = "Kpranav-Kp"
 
+_SESSION = requests.Session()
+_LIST_PAGES = {}
+
 
 def _headers():
     return {"Authorization": f"token {GH_TOKEN}"} if GH_TOKEN else {}
+
+
+def _get(url):
+    for attempt in range(4):
+        resp = _SESSION.get(url, headers=_headers())
+        if resp.status_code == 403 and resp.headers.get("X-RateLimit-Remaining") == "0":
+            retry = int(resp.headers.get("Retry-After", 30))
+            time.sleep(retry)
+            continue
+        return resp
+    return resp
 
 
 def fetch_repos():
@@ -53,21 +69,61 @@ def fetch_releases(releases_url):
     return []
 
 
-def fetch_commit_count(repo_full_name):
-    url = f"https://api.github.com/repos/{repo_full_name}/commits?per_page=1"
-    resp = requests.get(url, headers=_headers())
-    if resp.status_code not in (200, 201):
-        return 0
-    data = resp.json()
-    if not isinstance(data, list) or len(data) == 0:
-        return 0
-    link = resp.headers.get("Link", "")
-    if not link:
-        return 1
-    for part in link.split(","):
-        if 'rel="last"' in part:
-            import re
-            m = re.search(r'[?&]page=(\d+)', part)
-            if m:
-                return int(m.group(1))
-    return 1
+def fetch_commit_history(repo):
+    url = f"https://api.github.com/repos/{repo['full_name']}/commits?per_page=100"
+    items = []
+    while url:
+        resp = _get(url)
+        if resp.status_code != 200:
+            break
+        data = resp.json()
+        if not isinstance(data, list) or len(data) == 0:
+            break
+        for c in data:
+            if not isinstance(c, dict):
+                continue
+            sha = c.get("sha")
+            commit = c.get("commit") or {}
+            author = commit.get("author") or {}
+            ts = author.get("date")
+            if sha and ts:
+                items.append({"sha": sha, "date": ts})
+        if not resp.links.get("next"):
+            break
+        url = resp.links["next"]["url"]
+    return items
+
+
+def fetch_commit_stats(repo):
+    """Accurate per-repo line totals via individual commit detail stats."""
+    full_name = repo["full_name"]
+    added = deleted = 0
+
+    def detail(sha):
+        resp = _get(f"https://api.github.com/repos/{full_name}/commits/{sha}")
+        if resp.status_code != 200:
+            return 0, 0
+        stats = (resp.json() or {}).get("stats") or {}
+        return int(stats.get("additions") or 0), int(stats.get("deletions") or 0)
+
+    shas = []
+    url = f"https://api.github.com/repos/{full_name}/commits?per_page=100"
+    while url:
+        resp = _get(url)
+        if resp.status_code != 200:
+            break
+        data = resp.json()
+        if not isinstance(data, list) or len(data) == 0:
+            break
+        for c in data:
+            if isinstance(c, dict) and c.get("sha"):
+                shas.append(c["sha"])
+        if not resp.links.get("next"):
+            break
+        url = resp.links["next"]["url"]
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for add, dele in pool.map(detail, shas):
+            added += add
+            deleted += dele
+    return {"added": added, "deleted": deleted}

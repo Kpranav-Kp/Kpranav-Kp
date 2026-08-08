@@ -1,142 +1,201 @@
 {
-  "generated": "Jul 2026",
-  "generated_iso": "2026-07-03T06:01:08Z",
+  "generated": "Aug 2026",
+  "generated_iso": "2026-08-08T20:30:33Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 57.7,
+      "percentage": 58.2,
       "repos": 8,
-      "color": "#3776AB",
-      "trend": -5.3
+      "color": "#6366F1",
+      "trend": 0.0
     },
     {
       "name": "JavaScript",
-      "percentage": 33.9,
+      "percentage": 33.0,
       "repos": 5,
-      "color": "#F7DF1E",
-      "trend": -3.1
-    },
-    {
-      "name": "HTML",
-      "percentage": 5.5,
-      "repos": 6,
-      "color": "#3B82F6",
-      "trend": null
+      "color": "#38BDF8",
+      "trend": 0.0
     },
     {
       "name": "CSS",
-      "percentage": 2.9,
+      "percentage": 6.4,
       "repos": 5,
-      "color": "#3B82F6",
-      "trend": null
+      "color": "#A78BFA",
+      "trend": 0.0
+    },
+    {
+      "name": "HTML",
+      "percentage": 2.1,
+      "repos": 6,
+      "color": "#FBBF24",
+      "trend": 0.0
     },
     {
       "name": "Dockerfile",
-      "percentage": 0.0,
+      "percentage": 0.1,
+      "repos": 2,
+      "color": "#94A3B8",
+      "trend": 0.0
+    },
+    {
+      "name": "Shell",
+      "percentage": 0.1,
       "repos": 1,
-      "color": "#3B82F6",
-      "trend": null
+      "color": "#6366F1",
+      "trend": 0.0
     }
   ],
   "technologies": [
     {
       "name": "Django",
-      "percentage": 33.0,
+      "percentage": 31.0,
       "score": 1.0,
       "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#0C4B33"
+      "level_color": "#6366F1"
     },
     {
       "name": "PostgreSQL",
-      "percentage": 33.0,
+      "percentage": 31.0,
       "score": 1.0,
       "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#336791"
+      "level_color": "#6366F1"
     },
     {
       "name": "React",
-      "percentage": 33.0,
+      "percentage": 31.0,
       "score": 1.0,
       "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#61DAFB"
+      "level_color": "#6366F1"
     },
     {
       "name": "Python",
-      "percentage": 57.7,
-      "score": 0.831,
+      "percentage": 58.2,
+      "score": 0.829,
       "level": "Advanced",
-      "level_color": "#10B981",
-      "color": "#3776AB"
+      "level_color": "#6366F1"
     },
     {
       "name": "Docker",
-      "percentage": 25.0,
-      "score": 0.819,
+      "percentage": 24.0,
+      "score": 0.825,
       "level": "Intermediate",
-      "level_color": "#3B82F6",
-      "color": "#2496ED"
+      "level_color": "#38BDF8"
     },
     {
-      "name": "Celery",
-      "percentage": 24.0,
-      "score": 0.781,
+      "name": "Redis",
+      "percentage": 23.0,
+      "score": 0.786,
       "level": "Intermediate",
-      "level_color": "#3B82F6",
-      "color": "#37814A"
+      "level_color": "#38BDF8"
     }
   ],
   "complexity": [
     {
       "label": "Small",
-      "percentage": 50.0,
-      "count": 5,
-      "color": "#10B981"
+      "percentage": 40.0,
+      "count": 4,
+      "color": "#6366F1"
     },
     {
       "label": "Medium",
-      "percentage": 50.0,
-      "count": 5,
-      "color": "#F59E0B"
+      "percentage": 60.0,
+      "count": 6,
+      "color": "#FBBF24"
     },
     {
       "label": "Large",
       "percentage": 0.0,
       "count": 0,
-      "color": "#EF4444"
+      "color": "#FB7185"
     }
   ],
   "profile": {
-    "active_pct": 66,
-    "languages_count": 5,
-    "maturity": 1.5,
-    "grades": [
+    "current_streak": 2,
+    "longest_streak": 9,
+    "longest_range": "Feb 20 \u2013 28, 2026",
+    "lines_added": 227751,
+    "lines_deleted": 101896,
+    "total_commits": 295,
+    "commit_frequency": 7.0,
+    "peak_hour": "11 PM",
+    "peak_day": "Saturday",
+    "languages_count": 7,
+    "habits": [
       {
-        "label": "Overall",
-        "grade": "A",
-        "score": 66,
-        "color": "#3B82F6"
+        "label": "Long streaks",
+        "color": "#A78BFA"
       },
       {
-        "label": "Activity",
-        "grade": "A",
-        "score": 66,
-        "color": "#3B82F6"
+        "label": "Night coder",
+        "color": "#FB7185"
       },
       {
-        "label": "Depth",
-        "grade": "A+",
-        "score": 83,
-        "color": "#10B981"
-      },
-      {
-        "label": "Breadth",
-        "grade": "S",
-        "score": 86,
-        "color": "#FFD700"
+        "label": "Fast shipper",
+        "color": "#38BDF8"
       }
-    ]
-  }
+    ],
+    "repos_count": 10
+  },
+  "activity": [
+    {
+      "month": "Sep",
+      "commit": 2,
+      "pct": 3
+    },
+    {
+      "month": "Oct",
+      "commit": 39,
+      "pct": 62
+    },
+    {
+      "month": "Nov",
+      "commit": 13,
+      "pct": 21
+    },
+    {
+      "month": "Dec",
+      "commit": 19,
+      "pct": 30
+    },
+    {
+      "month": "Jan",
+      "commit": 5,
+      "pct": 8
+    },
+    {
+      "month": "Feb",
+      "commit": 20,
+      "pct": 32
+    },
+    {
+      "month": "Mar",
+      "commit": 22,
+      "pct": 35
+    },
+    {
+      "month": "Apr",
+      "commit": 63,
+      "pct": 100
+    },
+    {
+      "month": "May",
+      "commit": 17,
+      "pct": 27
+    },
+    {
+      "month": "Jun",
+      "commit": 14,
+      "pct": 22
+    },
+    {
+      "month": "Jul",
+      "commit": 54,
+      "pct": 86
+    },
+    {
+      "month": "Aug",
+      "commit": 3,
+      "pct": 5
+    }
+  ]
 }
