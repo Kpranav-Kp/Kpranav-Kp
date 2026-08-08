@@ -113,6 +113,7 @@
         <div class="sc sf">
           <h2>Core Technologies</h2>
           <div class="tg">
+<<<<<<< HEAD
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Django</span>
@@ -130,12 +131,36 @@
       <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
+=======
+    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.15s both;">
+      <div class="tca" style="background:#10B981"></div>
+      <span class="tcn">React</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:32.0%;background:#10B981;animation-delay:0.4s"></div></div>
+    </div>
+    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.25s both;">
+      <div class="tca" style="background:#10B981"></div>
+      <span class="tcn">Django</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:32.0%;background:#10B981;animation-delay:0.5s"></div></div>
+    </div>
+    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.35s both;">
+      <div class="tca" style="background:#10B981"></div>
+      <span class="tcn">PostgreSQL</span>
+      <span class="tcl" style="color:#10B981">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:32.0%;background:#10B981;animation-delay:0.6s"></div></div>
+>>>>>>> 740ffa948d6606c5166c455b7f955a24599972c0
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.34s both;">
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Python</span>
+<<<<<<< HEAD
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:58.2%;background:#6366F1;animation-delay:0.64s"></div></div>
+=======
+      <span class="tcl" style="color:#10B981">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:62.3%;background:#10B981;animation-delay:0.7s"></div></div>
+>>>>>>> 740ffa948d6606c5166c455b7f955a24599972c0
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
@@ -143,11 +168,19 @@
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:24.0%;background:#38BDF8;animation-delay:0.72s"></div></div>
     </div>
+<<<<<<< HEAD
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
       <span class="tcn">Redis</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:23.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
+=======
+    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.65s both;">
+      <div class="tca" style="background:#3B82F6"></div>
+      <span class="tcn">Redis</span>
+      <span class="tcl" style="color:#3B82F6">Intermediate</span>
+      <div class="tcb"><div class="bar" style="width:24.0%;background:#3B82F6;animation-delay:0.9s"></div></div>
+>>>>>>> 740ffa948d6606c5166c455b7f955a24599972c0
     </div></div>
         </div>
         <div class="sc">
@@ -173,6 +206,7 @@
     </div>
         </div>
         <div class="sc">
+<<<<<<< HEAD
           <h2>Profile</h2>
           <div class="grid2">
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.15s both">
@@ -194,6 +228,27 @@
       <span class="sl">Lines deleted</span>
       <span class="sv" style="color:#F43F5E">101.9k</span>
       <span class="sd">~10.2k/repo</span>
+=======
+          <h2>Code Profile</h2>
+          
+    <div class="row" style="animation: slideRow 0.5s ease-out 0.2s both;">
+      <span class="rl hl">Active</span>
+      <div class="bt"><div class="bar" style="width:65%;background:#10B981;animation-delay:0.5s"></div></div>
+      <span class="rv">65%</span>
+    </div>
+    <div class="row" style="animation: slideRow 0.5s ease-out 0.35s both;">
+      <span class="rl hl">Languages</span>
+      <span class="pv">7</span>
+    </div>
+    <div class="row" style="animation: slideRow 0.5s ease-out 0.5s both;">
+      <span class="rl hl">Maturity</span>
+      <span class="pv">1.6y</span>
+    </div>
+          <div class="gg">
+    <div class="gb" style="background:#10B98115;border-color:#10B98144;animation:fadeIn 0.4s ease-out 0.3s both;">
+      <span class="gl" style="color:#10B981">A+</span>
+      <span class="gln">Overall</span>
+>>>>>>> 740ffa948d6606c5166c455b7f955a24599972c0
     </div>
     <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
       <span class="sl">Commits / week</span>
@@ -208,6 +263,7 @@
           <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#38BDF8;border-color:#38BDF855;background:#38BDF811">Fast shipper</span></div>
         </div>
         <div class="sc sf">
+<<<<<<< HEAD
           <h2>Commit Activity · Last 12 Months</h2>
           <div class="act">
     <div class="ab" style="animation: slideUp 0.5s ease-out 0.15s both">
@@ -294,6 +350,10 @@
       </div>
       <span class="am">Aug</span>
     </div></div>
+=======
+          <h2>Stack</h2>
+          <div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">62.3%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#059669"><span class="nnd" style="background:#059669"></span><span class="nnn">FastAPI</span><span class="nnp">16%</span></span></div><div class="nc"><span class="nn" style="border-left-color:#3776AB"><span class="nnd" style="background:#3776AB"></span><span class="nnn">Python</span><span class="nnp">62.3%</span></span><span class="na" style="color:#3776AB66">→</span><span class="nn" style="border-left-color:#37814A"><span class="nnd" style="background:#37814A"></span><span class="nnn">Celery</span><span class="nnp">24%</span></span><span class="na" style="color:#37814A66">→</span><span class="nn" style="border-left-color:#0C4B33"><span class="nnd" style="background:#0C4B33"></span><span class="nnn">Django</span><span class="nnp">32%</span></span><span class="na" style="color:#0C4B3366">→</span><span class="nn" style="border-left-color:#61DAFB"><span class="nnd" style="background:#61DAFB"></span><span class="nnn">React</span><span class="nnp">32%</span></span><span class="na" style="color:#61DAFB66">→</span><span class="nn" style="border-left-color:#2496ED"><span class="nnd" style="background:#2496ED"></span><span class="nnn">Docker</span><span class="nnp">25%</span></span><span class="na" style="color:#2496ED66">→</span><span class="nn" style="border-left-color:#3ECF8E"><span class="nnd" style="background:#3ECF8E"></span><span class="nnn">Supabase</span><span class="nnp">14%</span></span><span class="na" style="color:#3ECF8E66">→</span><span class="nn" style="border-left-color:#336791"><span class="nnd" style="background:#336791"></span><span class="nnn">PostgreSQL</span><span class="nnp">32%</span></span><span class="na" style="color:#33679166">→</span><span class="nn" style="border-left-color:#DC382D"><span class="nnd" style="background:#DC382D"></span><span class="nnn">Redis</span><span class="nnp">24%</span></span></div>
+>>>>>>> 740ffa948d6606c5166c455b7f955a24599972c0
         </div>
       </div>
       <div style="height:20px"></div>
