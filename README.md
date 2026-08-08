@@ -4,8 +4,6 @@
 
 ### Full Stack Engineer • AI/ML Engineer • Backend Systems
 
-<img src="assets/live-status.svg" width="100%" style="max-width:440px;height:auto" alt="Kpranav-Kp status"/>
-
 </div>
 
 <img width="100%" height="3" src="assets/divider.svg"/>
