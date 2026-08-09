@@ -144,7 +144,7 @@ def render_svg(data):
             chip += f'<span class="hb" style="color:{h["color"]};border-color:{h["color"]}55;background:{h["color"]}11">{h["label"]}</span>'
         habits_html = f'<div class="habits">{"".join(chip)}</div>'
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1000" width="100%" height="100%">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" width="100%" height="100%">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" class="card">
       <style>
@@ -175,10 +175,11 @@ def render_svg(data):
           font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
           background: linear-gradient(160deg, var(--bg1), var(--bg2));
           border: 1px solid var(--border);
-          border-radius: 20px; padding: 28px;
+          border-radius: 20px 20px 0 0; padding: 24px;
           box-shadow: var(--shadow);
           width: 100%; min-height: 100%; color: var(--text);
           position: relative;
+          display: flex; flex-direction: column;
           animation: cardGlow 5s ease-in-out infinite;
         }}
         .card::after {{
@@ -231,7 +232,11 @@ def render_svg(data):
         .hb {{ font-size: 9px; font-weight: 600; padding: 3px 10px; border: 1px solid; border-radius: 999px; }}
         .ml {{ display: flex; justify-content: space-between; margin-top: 4px; }}
         .am {{ font-size: 9px; font-weight: 600; color: var(--muted); width: 8.33%; text-align: center; }}
-        .footer {{ display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted); animation: fadeIn 0.6s ease-out 0.6s both; }}
+        .footer {{
+          display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 12px;
+          border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted);
+          margin-top: auto;
+        }}
         @keyframes grow {{ from {{ width: 0%; }} }}
         @keyframes fadeIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
         @keyframes slideUp {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
@@ -269,7 +274,6 @@ def render_svg(data):
           {habits_html}
         </div>
       </div>
-      <div style="height:20px"></div>
       <div class="footer">
         <span>Updated {generated}</span>
         <span>GitHub Actions \u00b7 profile-analytics</span>
@@ -282,9 +286,18 @@ def render_svg(data):
 def render_city(activity):
     if not activity:
         return ""
-    towers, cu_w, cu_h = _city_geometry(activity)
+    towers, w, ch = _city_geometry(activity)
 
     n = len(activity)
+    R = 20
+    header = 78
+    H = header + ch + 40
+
+    path = (
+        f"M0,0 L{w:.1f},0 L{w:.1f},{H - R:.1f} Q{w:.1f},{H:.1f} {w - R:.1f},{H:.1f} "
+        f"L{R:.1f},{H:.1f} Q0,{H:.1f} 0,{H - R:.1f} Z"
+    )
+
     tower_html = []
     for i, tw in enumerate(towers):
         delay = round(i * 0.18, 2)
@@ -292,22 +305,30 @@ def render_city(activity):
         ty = tw["ty"]
         commit = tw.get("commit", 0)
         tower_html.append(
-            f'<g class="tw" style="animation-delay:{delay}s">'
+            f'<g class="tw" style="animation-delay:{delay}s" transform="translate(0 {header})">'
             f'{tw["polys"]}'
-            f'<text class="lbl" x="{tx:.1f}" y="{ty - 22:.1f}" text-anchor="middle">{commit}</text>'
+            f'<text class="lbl" x="{tx:.1f}" y="{ty - 20:.1f}" text-anchor="middle">{commit}</text>'
             f'</g>'
         )
 
     labels = ""
     for i, r in enumerate(activity):
-        cx = (i + 0.5) * (cu_w / n)
+        cx = (i + 0.5) * (w / n)
         labels += (
-            f'<text x="{cx:.1f}" y="{cu_h + 22:.1f}" font-size="13" fill="#7485A0" '
+            f'<text x="{cx:.1f}" y="{header + ch + 20:.1f}" font-size="13" fill="#7485A0" '
             f'text-anchor="middle" font-family="Inter, Arial, sans-serif">{r["month"]}</text>'
         )
 
-    H = cu_h + 36
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {cu_w:.1f} {H:.1f}" width="100%" height="auto" preserveAspectRatio="xMidYMin meet">
+    defs = (
+        f'<linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#0F1B2D"/>'
+        f'</linearGradient>'
+    )
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.1f} {H:.1f}" width="100%" height="auto" preserveAspectRatio="xMidYMin meet">
+  <defs>
+    {defs}
+  </defs>
   <style>
     .cube {{ opacity: 1; }}
     .tw {{ transform-box: fill-box; transform-origin: 50% 100%; }}
@@ -320,6 +341,8 @@ def render_city(activity):
     @keyframes lblIn {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: translateY(0); }} }}
     @media (prefers-reduced-motion: reduce) {{ .cube {{ animation: none !important; filter: none !important; }} .lbl {{ animation: none !important; opacity: 1; }} }}
   </style>
+  <path d="{path}" fill="url(#cbg)" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+  <text x="{w / 2:.1f}" y="{30}" text-anchor="middle" font-size="24" font-weight="700" fill="#F1F5F9" font-family="Inter, Arial, sans-serif">Monthly Commit Activity</text>
   <g>
     {"".join(tower_html)}
   </g>

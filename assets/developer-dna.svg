@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1000" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" width="100%" height="100%">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml" class="card">
       <style>
@@ -29,10 +29,11 @@
           font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
           background: linear-gradient(160deg, var(--bg1), var(--bg2));
           border: 1px solid var(--border);
-          border-radius: 20px; padding: 28px;
+          border-radius: 20px 20px 0 0; padding: 24px;
           box-shadow: var(--shadow);
           width: 100%; min-height: 100%; color: var(--text);
           position: relative;
+          display: flex; flex-direction: column;
           animation: cardGlow 5s ease-in-out infinite;
         }
         .card::after {
@@ -85,7 +86,11 @@
         .hb { font-size: 9px; font-weight: 600; padding: 3px 10px; border: 1px solid; border-radius: 999px; }
         .ml { display: flex; justify-content: space-between; margin-top: 4px; }
         .am { font-size: 9px; font-weight: 600; color: var(--muted); width: 8.33%; text-align: center; }
-        .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted); animation: fadeIn 0.6s ease-out 0.6s both; }
+        .footer {
+          display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 12px;
+          border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted);
+          margin-top: auto;
+        }
         @keyframes grow { from { width: 0%; } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -114,19 +119,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
@@ -134,7 +139,7 @@
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:58.5%;background:#6366F1;animation-delay:0.64s"></div></div>
+      <div class="tcb"><div class="bar" style="width:58.4%;background:#6366F1;animation-delay:0.64s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
@@ -144,7 +149,7 @@
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
-      <span class="tcn">Celery</span>
+      <span class="tcn">Redis</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:23.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
     </div></div>
@@ -186,18 +191,18 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
           <span class="sl">Lines added</span>
-          <span class="sv" style="color:#34D399">229.3k</span>
+          <span class="sv" style="color:#34D399">229.4k</span>
           <span class="sd">~22.9k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
-          <span class="sv" style="color:#F43F5E">103.1k</span>
+          <span class="sv" style="color:#F43F5E">103.2k</span>
           <span class="sd">~10.3k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
-          <span class="sv" style="color:#6366F1">7.2</span>
-          <span class="sd">304 lifetime</span>
+          <span class="sv" style="color:#6366F1">7.3</span>
+          <span class="sd">305 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
@@ -207,7 +212,6 @@
           <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#94A3B8;border-color:#94A3B855;background:#94A3B811">Weekend warrior</span></div>
         </div>
       </div>
-      <div style="height:20px"></div>
       <div class="footer">
         <span>Updated Aug 2026</span>
         <span>GitHub Actions · profile-analytics</span>

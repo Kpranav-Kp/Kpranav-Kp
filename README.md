@@ -115,9 +115,9 @@
 
 ## 📊 Profile Analytics
 
-<div align="center">
-  <img src="assets/developer-dna.svg?v=3" width="100%" style="max-width:900px;height:auto" alt="Profile Analytics" />
-  <img src="assets/developer-city.svg?v=2" width="100%" style="max-width:900px;height:auto" alt="Monthly Commit Activity" />
+<div align="center" style="width:100%;max-width:900px;">
+  <img src="assets/developer-dna.svg?v=4" style="width:100%;height:auto;display:block;margin:0;" alt="Profile Analytics" />
+  <img src="assets/developer-city.svg?v=3" style="width:100%;height:auto;display:block;margin:0;" alt="Monthly Commit Activity" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>
