@@ -12,10 +12,11 @@ if env_path.exists():
 
 from github_api import fetch_repos, fetch_topics, fetch_languages, fetch_repo_contents, fetch_releases, fetch_commit_history, fetch_commit_stats
 from analytics import compute
-from renderer import render_svg
+from renderer import render_svg, render_city
 
 ASSETS_DIR = "assets"
 OUTPUT_SVG = os.path.join(ASSETS_DIR, "developer-dna.svg")
+OUTPUT_CITY = os.path.join(ASSETS_DIR, "developer-city.svg")
 DATA_FILE = os.path.join(ASSETS_DIR, "engineering-data.json")
 
 
@@ -51,10 +52,14 @@ def main():
     data = compute(repos, fetched_topics, fetched_langs, fetched_contents, fetched_releases, fetched_commit_dates, fetched_commit_stats, old_data)
 
     svg = render_svg(data)
+    city = render_city(data.get("activity", []))
 
     os.makedirs(ASSETS_DIR, exist_ok=True)
     with open(OUTPUT_SVG, "w", encoding="utf-8") as f:
         f.write(svg)
+
+    with open(OUTPUT_CITY, "w", encoding="utf-8") as f:
+        f.write(city)
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)

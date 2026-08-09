@@ -117,6 +117,7 @@
 
 <div align="center">
   <img src="assets/developer-dna.svg?v=3" width="100%" style="max-width:900px;height:auto" alt="Profile Analytics" />
+  <img src="assets/developer-city.svg?v=1" width="100%" style="max-width:900px;height:auto" alt="Monthly Commit Activity" />
 </div>
 
 <img width="100%" height="3" src="assets/divider_purple.svg"/>

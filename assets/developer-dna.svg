@@ -86,6 +86,11 @@
         .legend { font-size: 9px; font-weight: 500; color: var(--muted); margin: 6px 0 2px; }
         .ml { display: flex; justify-content: space-between; margin-top: 4px; }
         .am { font-size: 9px; font-weight: 600; color: var(--muted); width: 8.33%; text-align: center; }
+        .bars { display: flex; align-items: flex-end; gap: 6px; height: 96px; }
+        .ab { flex: 1; height: 100%; background: var(--bar-bg); border-radius: 4px 4px 0 0; overflow: hidden; display: flex; align-items: flex-end; }
+        .afill { width: 100%; background: linear-gradient(180deg, var(--sky), var(--accent)); border-radius: 4px 4px 0 0; transition: height 0.3s; }
+        .citywrap { border: 1px dashed var(--bl); border-radius: 10px; padding: 10px; text-align: center; }
+        .note { font-size: 11px; color: var(--muted); font-weight: 600; }
         .city { display: block; width: 100%; }
         .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted); animation: fadeIn 0.6s ease-out 0.6s both; }
         @keyframes grow { from { width: 0%; } }
@@ -118,19 +123,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
@@ -195,13 +200,13 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
-          <span class="sv" style="color:#F43F5E">103.0k</span>
+          <span class="sv" style="color:#F43F5E">103.1k</span>
           <span class="sd">~10.3k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
           <span class="sv" style="color:#6366F1">7.2</span>
-          <span class="sd">302 lifetime</span>
+          <span class="sd">303 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
@@ -212,18 +217,7 @@
         </div>
         <div class="sc sf">
           <h2>Commit Activity · Last 12 Months</h2>
-          <svg class="city" viewBox="0 0 1334.8 955.0" preserveAspectRatio="xMidYMin meet">  
-  <style>
-    .city .cube { opacity: 1; animation: cityPulse 5s ease-in-out 1.2s infinite; }
-    .city { display: block; width: 100%; }
-    @keyframes cityPulse { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.14); } }
-    @media (prefers-reduced-motion: reduce) { .city .cube { opacity: 1; animation: none !important; } }
-  </style>
-  <g>
-    <polygon class="t cube" points="81.5,108.5 149.1,147.5 81.5,186.5 14.0,147.5" fill="#3f4d6b"/><polygon class="t cube" points="149.1,225.5 149.1,147.5 81.5,186.5 81.5,264.5" fill="#343f58"/><polygon class="t cube" points="14.0,225.5 14.0,147.5 81.5,186.5 81.5,264.5" fill="#273042"/><polygon class="t cube" points="188.1,170.0 255.6,209.0 188.1,248.0 120.5,209.0" fill="#3f4d6b"/><polygon class="t cube" points="255.6,287.0 255.6,209.0 188.1,248.0 188.1,326.0" fill="#343f58"/><polygon class="t cube" points="120.5,287.0 120.5,209.0 188.1,248.0 188.1,326.0" fill="#273042"/><polygon class="t cube" points="188.1,92.0 255.6,131.0 188.1,170.0 120.5,131.0" fill="#5b6c99"/><polygon class="t cube" points="255.6,209.0 255.6,131.0 188.1,170.0 188.1,248.0" fill="#4b597d"/><polygon class="t cube" points="120.5,209.0 120.5,131.0 188.1,170.0 188.1,248.0" fill="#38435f"/><polygon class="t cube" points="188.1,14.0 255.6,53.0 188.1,92.0 120.5,53.0" fill="#6f83c0"/><polygon class="t cube" points="255.6,131.0 255.6,53.0 188.1,92.0 188.1,170.0" fill="#5b6b9d"/><polygon class="t cube" points="120.5,131.0 120.5,53.0 188.1,92.0 188.1,170.0" fill="#455177"/><polygon class="t cube" points="294.6,231.5 362.1,270.5 294.6,309.5 227.0,270.5" fill="#3f4d6b"/><polygon class="t cube" points="362.1,348.5 362.1,270.5 294.6,309.5 294.6,387.5" fill="#343f58"/><polygon class="t cube" points="227.0,348.5 227.0,270.5 294.6,309.5 294.6,387.5" fill="#273042"/><polygon class="t cube" points="401.1,293.0 468.6,332.0 401.1,371.0 333.6,332.0" fill="#3f4d6b"/><polygon class="t cube" points="468.6,410.0 468.6,332.0 401.1,371.0 401.1,449.0" fill="#343f58"/><polygon class="t cube" points="333.6,410.0 333.6,332.0 401.1,371.0 401.1,449.0" fill="#273042"/><polygon class="t cube" points="401.1,215.0 468.6,254.0 401.1,293.0 333.6,254.0" fill="#5b6c99"/><polygon class="t cube" points="468.6,332.0 468.6,254.0 401.1,293.0 401.1,371.0" fill="#4b597d"/><polygon class="t cube" points="333.6,332.0 333.6,254.0 401.1,293.0 401.1,371.0" fill="#38435f"/><polygon class="t cube" points="507.6,354.5 575.2,393.5 507.6,432.5 440.1,393.5" fill="#3f4d6b"/><polygon class="t cube" points="575.2,471.5 575.2,393.5 507.6,432.5 507.6,510.5" fill="#343f58"/><polygon class="t cube" points="440.1,471.5 440.1,393.5 507.6,432.5 507.6,510.5" fill="#273042"/><polygon class="t cube" points="614.1,416.0 681.7,455.0 614.1,494.0 546.6,455.0" fill="#3f4d6b"/><polygon class="t cube" points="681.7,533.0 681.7,455.0 614.1,494.0 614.1,572.0" fill="#343f58"/><polygon class="t cube" points="546.6,533.0 546.6,455.0 614.1,494.0 614.1,572.0" fill="#273042"/><polygon class="t cube" points="614.1,338.0 681.7,377.0 614.1,416.0 546.6,377.0" fill="#5b6c99"/><polygon class="t cube" points="681.7,455.0 681.7,377.0 614.1,416.0 614.1,494.0" fill="#4b597d"/><polygon class="t cube" points="546.6,455.0 546.6,377.0 614.1,416.0 614.1,494.0" fill="#38435f"/><polygon class="t cube" points="720.7,477.5 788.2,516.5 720.7,555.5 653.1,516.5" fill="#3f4d6b"/><polygon class="t cube" points="788.2,594.5 788.2,516.5 720.7,555.5 720.7,633.5" fill="#343f58"/><polygon class="t cube" points="653.1,594.5 653.1,516.5 720.7,555.5 720.7,633.5" fill="#273042"/><polygon class="t cube" points="720.7,399.5 788.2,438.5 720.7,477.5 653.1,438.5" fill="#5b6c99"/><polygon class="t cube" points="788.2,516.5 788.2,438.5 720.7,477.5 720.7,555.5" fill="#4b597d"/><polygon class="t cube" points="653.1,516.5 653.1,438.5 720.7,477.5 720.7,555.5" fill="#38435f"/><polygon class="t cube" points="827.2,539.0 894.7,578.0 827.2,617.0 759.6,578.0" fill="#3f4d6b"/><polygon class="t cube" points="894.7,656.0 894.7,578.0 827.2,617.0 827.2,695.0" fill="#343f58"/><polygon class="t cube" points="759.6,656.0 759.6,578.0 827.2,617.0 827.2,695.0" fill="#273042"/><polygon class="t cube" points="827.2,461.0 894.7,500.0 827.2,539.0 759.6,500.0" fill="#5b6c99"/><polygon class="t cube" points="894.7,578.0 894.7,500.0 827.2,539.0 827.2,617.0" fill="#4b597d"/><polygon class="t cube" points="759.6,578.0 759.6,500.0 827.2,539.0 827.2,617.0" fill="#38435f"/><polygon class="t cube" points="827.2,383.0 894.7,422.0 827.2,461.0 759.6,422.0" fill="#6f83c0"/><polygon class="t cube" points="894.7,500.0 894.7,422.0 827.2,461.0 827.2,539.0" fill="#5b6b9d"/><polygon class="t cube" points="759.6,500.0 759.6,422.0 827.2,461.0 827.2,539.0" fill="#455177"/><polygon class="t cube" points="827.2,305.0 894.7,344.0 827.2,383.0 759.6,344.0" fill="#6366f1"/><polygon class="t cube" points="894.7,422.0 894.7,344.0 827.2,383.0 827.2,461.0" fill="#5154c6"/><polygon class="t cube" points="759.6,422.0 759.6,344.0 827.2,383.0 827.2,461.0" fill="#3d3f95"/><polygon class="t cube" points="827.2,227.0 894.7,266.0 827.2,305.0 759.6,266.0" fill="#38bdf8"/><polygon class="t cube" points="894.7,344.0 894.7,266.0 827.2,305.0 827.2,383.0" fill="#2e9bcb"/><polygon class="t cube" points="759.6,344.0 759.6,266.0 827.2,305.0 827.2,383.0" fill="#23759a"/><polygon class="t cube" points="933.7,600.5 1001.2,639.5 933.7,678.5 866.1,639.5" fill="#3f4d6b"/><polygon class="t cube" points="1001.2,717.5 1001.2,639.5 933.7,678.5 933.7,756.5" fill="#343f58"/><polygon class="t cube" points="866.1,717.5 866.1,639.5 933.7,678.5 933.7,756.5" fill="#273042"/><polygon class="t cube" points="1040.2,662.0 1107.8,701.0 1040.2,740.0 972.7,701.0" fill="#3f4d6b"/><polygon class="t cube" points="1107.8,779.0 1107.8,701.0 1040.2,740.0 1040.2,818.0" fill="#343f58"/><polygon class="t cube" points="972.7,779.0 972.7,701.0 1040.2,740.0 1040.2,818.0" fill="#273042"/><polygon class="t cube" points="1146.7,723.5 1214.3,762.5 1146.7,801.5 1079.2,762.5" fill="#3f4d6b"/><polygon class="t cube" points="1214.3,840.5 1214.3,762.5 1146.7,801.5 1146.7,879.5" fill="#343f58"/><polygon class="t cube" points="1079.2,840.5 1079.2,762.5 1146.7,801.5 1146.7,879.5" fill="#273042"/><polygon class="t cube" points="1146.7,645.5 1214.3,684.5 1146.7,723.5 1079.2,684.5" fill="#5b6c99"/><polygon class="t cube" points="1214.3,762.5 1214.3,684.5 1146.7,723.5 1146.7,801.5" fill="#4b597d"/><polygon class="t cube" points="1079.2,762.5 1079.2,684.5 1146.7,723.5 1146.7,801.5" fill="#38435f"/><polygon class="t cube" points="1146.7,567.5 1214.3,606.5 1146.7,645.5 1079.2,606.5" fill="#6f83c0"/><polygon class="t cube" points="1214.3,684.5 1214.3,606.5 1146.7,645.5 1146.7,723.5" fill="#5b6b9d"/><polygon class="t cube" points="1079.2,684.5 1079.2,606.5 1146.7,645.5 1146.7,723.5" fill="#455177"/><polygon class="t cube" points="1146.7,489.5 1214.3,528.5 1146.7,567.5 1079.2,528.5" fill="#6366f1"/><polygon class="t cube" points="1214.3,606.5 1214.3,528.5 1146.7,567.5 1146.7,645.5" fill="#5154c6"/><polygon class="t cube" points="1079.2,606.5 1079.2,528.5 1146.7,567.5 1146.7,645.5" fill="#3d3f95"/><polygon class="t cube" points="1253.2,785.0 1320.8,824.0 1253.2,863.0 1185.7,824.0" fill="#3f4d6b"/><polygon class="t cube" points="1320.8,902.0 1320.8,824.0 1253.2,863.0 1253.2,941.0" fill="#343f58"/><polygon class="t cube" points="1185.7,902.0 1185.7,824.0 1253.2,863.0 1253.2,941.0" fill="#273042"/>
-  </g>
-</svg>
-<div class="ml"><span class="am">Sep</span><span class="am">Oct</span><span class="am">Nov</span><span class="am">Dec</span><span class="am">Jan</span><span class="am">Feb</span><span class="am">Mar</span><span class="am">Apr</span><span class="am">May</span><span class="am">Jun</span><span class="am">Jul</span><span class="am">Aug</span></div>
+          <div class="bars"><div class="ab" title="Sep: 2 commits"><div class="afill" style="height:4%"></div></div><div class="ab" title="Oct: 39 commits"><div class="afill" style="height:62%"></div></div><div class="ab" title="Nov: 13 commits"><div class="afill" style="height:21%"></div></div><div class="ab" title="Dec: 19 commits"><div class="afill" style="height:30%"></div></div><div class="ab" title="Jan: 5 commits"><div class="afill" style="height:8%"></div></div><div class="ab" title="Feb: 20 commits"><div class="afill" style="height:32%"></div></div><div class="ab" title="Mar: 22 commits"><div class="afill" style="height:35%"></div></div><div class="ab" title="Apr: 63 commits"><div class="afill" style="height:100%"></div></div><div class="ab" title="May: 17 commits"><div class="afill" style="height:27%"></div></div><div class="ab" title="Jun: 14 commits"><div class="afill" style="height:22%"></div></div><div class="ab" title="Jul: 54 commits"><div class="afill" style="height:86%"></div></div><div class="ab" title="Aug: 11 commits"><div class="afill" style="height:17%"></div></div></div><div class="ml"><span class="am">Sep</span><span class="am">Oct</span><span class="am">Nov</span><span class="am">Dec</span><span class="am">Jan</span><span class="am">Feb</span><span class="am">Mar</span><span class="am">Apr</span><span class="am">May</span><span class="am">Jun</span><span class="am">Jul</span><span class="am">Aug</span></div>
           <div class="legend">cube height = commits / month</div>
         </div>
       </div>
