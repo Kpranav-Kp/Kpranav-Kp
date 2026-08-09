@@ -1,17 +1,17 @@
 {
   "generated": "Aug 2026",
-  "generated_iso": "2026-08-09T09:52:28Z",
+  "generated_iso": "2026-08-09T10:20:12Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 58.4,
+      "percentage": 58.5,
       "repos": 8,
       "color": "#6366F1",
       "trend": 0.0
     },
     {
       "name": "JavaScript",
-      "percentage": 32.9,
+      "percentage": 32.8,
       "repos": 5,
       "color": "#38BDF8",
       "trend": 0.0
@@ -54,13 +54,6 @@
       "level_color": "#6366F1"
     },
     {
-      "name": "PostgreSQL",
-      "percentage": 31.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#6366F1"
-    },
-    {
       "name": "Django",
       "percentage": 31.0,
       "score": 1.0,
@@ -68,8 +61,15 @@
       "level_color": "#6366F1"
     },
     {
+      "name": "PostgreSQL",
+      "percentage": 31.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#6366F1"
+    },
+    {
       "name": "Python",
-      "percentage": 58.4,
+      "percentage": 58.5,
       "score": 0.834,
       "level": "Advanced",
       "level_color": "#6366F1"
@@ -82,7 +82,7 @@
       "level_color": "#38BDF8"
     },
     {
-      "name": "Redis",
+      "name": "Celery",
       "percentage": 23.0,
       "score": 0.786,
       "level": "Intermediate",
@@ -113,9 +113,9 @@
     "current_streak": 2,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-    "lines_added": 229217,
-    "lines_deleted": 103080,
-    "total_commits": 303,
+    "lines_added": 229312,
+    "lines_deleted": 103130,
+    "total_commits": 304,
     "commit_frequency": 7.2,
     "peak_hour": "11 PM",
     "peak_day": "Sunday",
@@ -194,8 +194,8 @@
     },
     {
       "month": "Aug",
-      "commit": 11,
-      "pct": 17
+      "commit": 12,
+      "pct": 19
     }
   ]
 }

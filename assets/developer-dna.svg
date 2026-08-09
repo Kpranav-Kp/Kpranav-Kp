@@ -83,15 +83,8 @@
         .sd { font-size: 9px; font-weight: 500; color: var(--muted); margin-top: 1px; }
         .habits { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
         .hb { font-size: 9px; font-weight: 600; padding: 3px 10px; border: 1px solid; border-radius: 999px; }
-        .legend { font-size: 9px; font-weight: 500; color: var(--muted); margin: 6px 0 2px; }
         .ml { display: flex; justify-content: space-between; margin-top: 4px; }
         .am { font-size: 9px; font-weight: 600; color: var(--muted); width: 8.33%; text-align: center; }
-        .bars { display: flex; align-items: flex-end; gap: 6px; height: 96px; }
-        .ab { flex: 1; height: 100%; background: var(--bar-bg); border-radius: 4px 4px 0 0; overflow: hidden; display: flex; align-items: flex-end; }
-        .afill { width: 100%; background: linear-gradient(180deg, var(--sky), var(--accent)); border-radius: 4px 4px 0 0; transition: height 0.3s; }
-        .citywrap { border: 1px dashed var(--bl); border-radius: 10px; padding: 10px; text-align: center; }
-        .note { font-size: 11px; color: var(--muted); font-weight: 600; }
-        .city { display: block; width: 100%; }
         .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted); animation: fadeIn 0.6s ease-out 0.6s both; }
         @keyframes grow { from { width: 0%; } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -103,8 +96,6 @@
           50% { box-shadow: 0 0 30px 2px rgba(14,165,233,0.18), var(--shadow); }
         }
         .sv { color: var(--text); }
-        .city polygon { will-change: opacity; }
-        .city polygon:nth-of-type(3n) { filter: brightness(1.05); }
         @media (max-width: 500px) {
           .grid { grid-template-columns: 1fr; }
           .sf { grid-column: span 1; }
@@ -129,13 +120,13 @@
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
@@ -143,7 +134,7 @@
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:58.4%;background:#6366F1;animation-delay:0.64s"></div></div>
+      <div class="tcb"><div class="bar" style="width:58.5%;background:#6366F1;animation-delay:0.64s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
@@ -153,7 +144,7 @@
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
-      <span class="tcn">Redis</span>
+      <span class="tcn">Celery</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:23.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
     </div></div>
@@ -195,7 +186,7 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
           <span class="sl">Lines added</span>
-          <span class="sv" style="color:#34D399">229.2k</span>
+          <span class="sv" style="color:#34D399">229.3k</span>
           <span class="sd">~22.9k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
@@ -206,7 +197,7 @@
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
           <span class="sv" style="color:#6366F1">7.2</span>
-          <span class="sd">303 lifetime</span>
+          <span class="sd">304 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
@@ -214,11 +205,6 @@
           <span class="sd">Sunday</span>
         </div></div>
           <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#94A3B8;border-color:#94A3B855;background:#94A3B811">Weekend warrior</span></div>
-        </div>
-        <div class="sc sf">
-          <h2>Commit Activity · Last 12 Months</h2>
-          <div class="bars"><div class="ab" title="Sep: 2 commits"><div class="afill" style="height:4%"></div></div><div class="ab" title="Oct: 39 commits"><div class="afill" style="height:62%"></div></div><div class="ab" title="Nov: 13 commits"><div class="afill" style="height:21%"></div></div><div class="ab" title="Dec: 19 commits"><div class="afill" style="height:30%"></div></div><div class="ab" title="Jan: 5 commits"><div class="afill" style="height:8%"></div></div><div class="ab" title="Feb: 20 commits"><div class="afill" style="height:32%"></div></div><div class="ab" title="Mar: 22 commits"><div class="afill" style="height:35%"></div></div><div class="ab" title="Apr: 63 commits"><div class="afill" style="height:100%"></div></div><div class="ab" title="May: 17 commits"><div class="afill" style="height:27%"></div></div><div class="ab" title="Jun: 14 commits"><div class="afill" style="height:22%"></div></div><div class="ab" title="Jul: 54 commits"><div class="afill" style="height:86%"></div></div><div class="ab" title="Aug: 11 commits"><div class="afill" style="height:17%"></div></div></div><div class="ml"><span class="am">Sep</span><span class="am">Oct</span><span class="am">Nov</span><span class="am">Dec</span><span class="am">Jan</span><span class="am">Feb</span><span class="am">Mar</span><span class="am">Apr</span><span class="am">May</span><span class="am">Jun</span><span class="am">Jul</span><span class="am">Aug</span></div>
-          <div class="legend">cube height = commits / month</div>
         </div>
       </div>
       <div style="height:20px"></div>

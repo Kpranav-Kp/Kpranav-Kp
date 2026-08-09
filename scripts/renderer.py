@@ -53,39 +53,24 @@ def _city_geometry(activity):
     def v(pt):
         return f"{pt[0] + ox:.1f},{pt[1] + oy:.1f}"
 
-    polys = []
-    for tw in towers:
+    towers_out = []
+    for idx, tw in enumerate(towers):
         cx = tw["cx"]
         top = tw["level"] * u
+        mcx, mcy = P(cx + u / 2, top, u / 2)
+        tower_polys = []
         for k in range(tw["level"]):
             y0 = k * u
             y1 = y0 + u
             front = RAMP[min(k, len(RAMP) - 1)]
-            polys.append(f'<polygon class="cube" points="{v(P(cx, y1, 0.0))} {v(P(cx + u, y1, 0.0))} {v(P(cx + u, y1, u))} {v(P(cx, y1, u))}" fill="{_shade(front, 1.0)}"/>')
-            polys.append(f'<polygon class="cube" points="{v(P(cx + u, y0, 0.0))} {v(P(cx + u, y1, 0.0))} {v(P(cx + u, y1, u))} {v(P(cx + u, y0, u))}" fill="{_shade(front, 0.82)}"/>')
-            polys.append(f'<polygon class="cube" points="{v(P(cx, y0, u))} {v(P(cx, y1, u))} {v(P(cx + u, y1, u))} {v(P(cx + u, y0, u))}" fill="{_shade(front, 0.62)}"/>')
+            tower_polys.append(f'<polygon class="cube" points="{v(P(cx, y1, 0.0))} {v(P(cx + u, y1, 0.0))} {v(P(cx + u, y1, u))} {v(P(cx, y1, u))}" fill="{_shade(front, 1.0)}"/>')
+            tower_polys.append(f'<polygon class="cube" points="{v(P(cx + u, y0, 0.0))} {v(P(cx + u, y1, 0.0))} {v(P(cx + u, y1, u))} {v(P(cx + u, y0, u))}" fill="{_shade(front, 0.82)}"/>')
+            tower_polys.append(f'<polygon class="cube" points="{v(P(cx, y0, u))} {v(P(cx, y1, u))} {v(P(cx + u, y1, u))} {v(P(cx + u, y0, u))}" fill="{_shade(front, 0.62)}"/>')
+        towers[idx]["polys"] = "".join(tower_polys)
+        towers[idx]["tx"] = mcx + ox
+        towers[idx]["ty"] = mcy + oy
 
-    return polys, W, H
-
-
-def _build_city(activity):
-    return '<div class="citywrap"><label class="note">Monthly activity rendered below &#8595;</label></div>'
-
-
-def _build_activity_bars(activity):
-    if not activity:
-        return ""
-    bars = ""
-    for r in activity:
-        pct = max(r.get("pct") or 0, 4)
-        bars += (
-            f'<div class="ab" title="{r.get("month")}: {r.get("commit", 0)} commits">'
-            f'<div class="afill" style="height:{pct:.0f}%"></div></div>'
-        )
-    labels = ""
-    for r in activity:
-        labels += f'<span class="am">{r["month"]}</span>'
-    return f'<div class="bars">{bars}</div><div class="ml">{labels}</div>'
+    return towers, W, H
 
 
 def render_svg(data):
@@ -158,8 +143,6 @@ def render_svg(data):
         for h in habits:
             chip += f'<span class="hb" style="color:{h["color"]};border-color:{h["color"]}55;background:{h["color"]}11">{h["label"]}</span>'
         habits_html = f'<div class="habits">{"".join(chip)}</div>'
-
-    city_html = _build_activity_bars(activity)
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1000" width="100%" height="100%">
   <foreignObject width="100%" height="100%">
@@ -246,15 +229,8 @@ def render_svg(data):
         .sd {{ font-size: 9px; font-weight: 500; color: var(--muted); margin-top: 1px; }}
         .habits {{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }}
         .hb {{ font-size: 9px; font-weight: 600; padding: 3px 10px; border: 1px solid; border-radius: 999px; }}
-        .legend {{ font-size: 9px; font-weight: 500; color: var(--muted); margin: 6px 0 2px; }}
         .ml {{ display: flex; justify-content: space-between; margin-top: 4px; }}
         .am {{ font-size: 9px; font-weight: 600; color: var(--muted); width: 8.33%; text-align: center; }}
-        .bars {{ display: flex; align-items: flex-end; gap: 6px; height: 96px; }}
-        .ab {{ flex: 1; height: 100%; background: var(--bar-bg); border-radius: 4px 4px 0 0; overflow: hidden; display: flex; align-items: flex-end; }}
-        .afill {{ width: 100%; background: linear-gradient(180deg, var(--sky), var(--accent)); border-radius: 4px 4px 0 0; transition: height 0.3s; }}
-        .citywrap {{ border: 1px dashed var(--bl); border-radius: 10px; padding: 10px; text-align: center; }}
-        .note {{ font-size: 11px; color: var(--muted); font-weight: 600; }}
-        .city {{ display: block; width: 100%; }}
         .footer {{ display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--bl); font-size: 10px; color: var(--muted); animation: fadeIn 0.6s ease-out 0.6s both; }}
         @keyframes grow {{ from {{ width: 0%; }} }}
         @keyframes fadeIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
@@ -266,8 +242,6 @@ def render_svg(data):
           50% {{ box-shadow: 0 0 30px 2px rgba(14,165,233,0.18), var(--shadow); }}
         }}
         .sv {{ color: var(--text); }}
-        .city polygon {{ will-change: opacity; }}
-        .city polygon:nth-of-type(3n) {{ filter: brightness(1.05); }}
         @media (max-width: 500px) {{
           .grid {{ grid-template-columns: 1fr; }}
           .sf {{ grid-column: span 1; }}
@@ -294,11 +268,6 @@ def render_svg(data):
           <div class="grid2">{stat_cards}</div>
           {habits_html}
         </div>
-        <div class="sc sf">
-          <h2>Commit Activity \u00b7 Last 12 Months</h2>
-          {city_html}
-          <div class="legend">cube height = commits / month</div>
-        </div>
       </div>
       <div style="height:20px"></div>
       <div class="footer">
@@ -313,25 +282,46 @@ def render_svg(data):
 def render_city(activity):
     if not activity:
         return ""
-    polys, cu_w, cu_h = _city_geometry(activity)
+    towers, cu_w, cu_h = _city_geometry(activity)
+
+    n = len(activity)
+    tower_html = []
+    for i, tw in enumerate(towers):
+        delay = round(i * 0.18, 2)
+        tx = tw["tx"]
+        ty = tw["ty"]
+        commit = tw.get("commit", 0)
+        tower_html.append(
+            f'<g class="tw" style="animation-delay:{delay}s">'
+            f'{tw["polys"]}'
+            f'<text class="lbl" x="{tx:.1f}" y="{ty - 22:.1f}" text-anchor="middle">{commit}</text>'
+            f'</g>'
+        )
 
     labels = ""
-    n = len(activity)
     for i, r in enumerate(activity):
         cx = (i + 0.5) * (cu_w / n)
         labels += (
-            f'<text x="{cx:.1f}" y="{cu_h + 20:.1f}" font-size="13" fill="#7485A0" '
+            f'<text x="{cx:.1f}" y="{cu_h + 22:.1f}" font-size="13" fill="#7485A0" '
             f'text-anchor="middle" font-family="Inter, Arial, sans-serif">{r["month"]}</text>'
         )
 
-    H = cu_h + 34
+    H = cu_h + 36
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {cu_w:.1f} {H:.1f}" width="100%" height="auto" preserveAspectRatio="xMidYMin meet">
   <style>
     .cube {{ opacity: 1; }}
-    @media (prefers-reduced-motion: reduce) {{ .cube {{ opacity: 1; animation: none; }} }}
+    .tw {{ transform-box: fill-box; transform-origin: 50% 100%; }}
+    .tw .cube {{ animation: cubeFloat 3.2s ease-in-out infinite; animation-delay: inherit; }}
+    .tw .lbl {{ font-size: 15px; font-weight: 700; fill: #E2E8F0; font-family: Inter, Arial, sans-serif; opacity: 0; animation: lblIn 0.6s ease-out forwards; }}
+    @keyframes cubeFloat {{
+      0%, 100% {{ transform: translateY(0); filter: drop-shadow(0 0 6px rgba(99,102,241,0.55)); }}
+      50% {{ transform: translateY(-7px); filter: drop-shadow(0 0 18px rgba(56,189,248,0.9)); }}
+    }}
+    @keyframes lblIn {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+    @media (prefers-reduced-motion: reduce) {{ .cube {{ animation: none !important; filter: none !important; }} .lbl {{ animation: none !important; opacity: 1; }} }}
   </style>
   <g>
-    {"".join(polys)}
+    {"".join(tower_html)}
   </g>
   {labels}
 </svg>'''
