@@ -119,19 +119,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
@@ -139,7 +139,7 @@
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Python</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:58.4%;background:#6366F1;animation-delay:0.64s"></div></div>
+      <div class="tcb"><div class="bar" style="width:58.5%;background:#6366F1;animation-delay:0.64s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
@@ -191,18 +191,18 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
           <span class="sl">Lines added</span>
-          <span class="sv" style="color:#34D399">229.4k</span>
+          <span class="sv" style="color:#34D399">229.5k</span>
           <span class="sd">~22.9k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
-          <span class="sv" style="color:#F43F5E">103.2k</span>
+          <span class="sv" style="color:#F43F5E">103.3k</span>
           <span class="sd">~10.3k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
           <span class="sv" style="color:#6366F1">7.3</span>
-          <span class="sd">305 lifetime</span>
+          <span class="sd">306 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>

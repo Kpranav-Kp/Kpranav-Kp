@@ -1,13 +1,13 @@
 {
   "generated": "Aug 2026",
-  "generated_iso": "2026-08-09T11:09:37Z",
+  "generated_iso": "2026-08-10T07:50:05Z",
   "languages": [
     {
       "name": "Python",
-      "percentage": 58.4,
+      "percentage": 58.5,
       "repos": 8,
       "color": "#6366F1",
-      "trend": 0.0
+      "trend": 0.1
     },
     {
       "name": "JavaScript",
@@ -47,13 +47,6 @@
   ],
   "technologies": [
     {
-      "name": "Django",
-      "percentage": 31.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#6366F1"
-    },
-    {
       "name": "PostgreSQL",
       "percentage": 31.0,
       "score": 1.0,
@@ -68,8 +61,15 @@
       "level_color": "#6366F1"
     },
     {
+      "name": "Django",
+      "percentage": 31.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#6366F1"
+    },
+    {
       "name": "Python",
-      "percentage": 58.4,
+      "percentage": 58.5,
       "score": 0.834,
       "level": "Advanced",
       "level_color": "#6366F1"
@@ -113,9 +113,9 @@
     "current_streak": 2,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-    "lines_added": 229381,
-    "lines_deleted": 103215,
-    "total_commits": 305,
+    "lines_added": 229456,
+    "lines_deleted": 103258,
+    "total_commits": 306,
     "commit_frequency": 7.3,
     "peak_hour": "11 PM",
     "peak_day": "Sunday",
@@ -194,8 +194,8 @@
     },
     {
       "month": "Aug",
-      "commit": 13,
-      "pct": 21
+      "commit": 14,
+      "pct": 22
     }
   ]
 }
