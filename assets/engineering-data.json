@@ -1,13 +1,13 @@
 {
   "generated": "Aug 2026",
-  "generated_iso": "2026-08-10T07:50:05Z",
+  "generated_iso": "2026-08-11T10:58:08Z",
   "languages": [
     {
       "name": "Python",
       "percentage": 58.5,
       "repos": 8,
       "color": "#6366F1",
-      "trend": 0.1
+      "trend": 0.0
     },
     {
       "name": "JavaScript",
@@ -47,7 +47,7 @@
   ],
   "technologies": [
     {
-      "name": "PostgreSQL",
+      "name": "Django",
       "percentage": 31.0,
       "score": 1.0,
       "level": "Advanced",
@@ -61,7 +61,7 @@
       "level_color": "#6366F1"
     },
     {
-      "name": "Django",
+      "name": "PostgreSQL",
       "percentage": 31.0,
       "score": 1.0,
       "level": "Advanced",
@@ -82,7 +82,7 @@
       "level_color": "#38BDF8"
     },
     {
-      "name": "Redis",
+      "name": "Celery",
       "percentage": 23.0,
       "score": 0.786,
       "level": "Intermediate",
@@ -110,17 +110,21 @@
     }
   ],
   "profile": {
-    "current_streak": 2,
+    "current_streak": 4,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-    "lines_added": 229456,
-    "lines_deleted": 103258,
-    "total_commits": 306,
-    "commit_frequency": 7.3,
+    "lines_added": 229478,
+    "lines_deleted": 103280,
+    "total_commits": 309,
+    "commit_frequency": 7.2,
     "peak_hour": "11 PM",
     "peak_day": "Sunday",
     "languages_count": 7,
     "habits": [
+      {
+        "label": "Consistent streak",
+        "color": "#6366F1"
+      },
       {
         "label": "Long streaks",
         "color": "#A78BFA"
@@ -128,10 +132,6 @@
       {
         "label": "Night coder",
         "color": "#FB7185"
-      },
-      {
-        "label": "Weekend warrior",
-        "color": "#94A3B8"
       }
     ],
     "repos_count": 10
@@ -194,8 +194,8 @@
     },
     {
       "month": "Aug",
-      "commit": 14,
-      "pct": 22
+      "commit": 17,
+      "pct": 27
     }
   ]
 }
