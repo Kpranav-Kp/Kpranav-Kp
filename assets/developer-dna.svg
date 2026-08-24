@@ -119,39 +119,39 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.4s"></div></div>
+      <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.48s"></div></div>
+      <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
       <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:31.0%;background:#6366F1;animation-delay:0.56s"></div></div>
+      <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.34s both;">
-      <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Python</span>
-      <span class="tcl" style="color:#6366F1">Advanced</span>
-      <div class="tcb"><div class="bar" style="width:58.5%;background:#6366F1;animation-delay:0.64s"></div></div>
-    </div>
-    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
       <div class="tca" style="background:#38BDF8"></div>
       <span class="tcn">Docker</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
-      <div class="tcb"><div class="bar" style="width:24.0%;background:#38BDF8;animation-delay:0.72s"></div></div>
+      <div class="tcb"><div class="bar" style="width:21.0%;background:#38BDF8;animation-delay:0.64s"></div></div>
+    </div>
+    <div class="tc" style="animation: fadeIn 0.5s ease-out 0.42s both;">
+      <div class="tca" style="background:#6366F1"></div>
+      <span class="tcn">Python</span>
+      <span class="tcl" style="color:#6366F1">Advanced</span>
+      <div class="tcb"><div class="bar" style="width:57.0%;background:#6366F1;animation-delay:0.72s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
-      <span class="tcn">Redis</span>
+      <span class="tcn">Celery</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
-      <div class="tcb"><div class="bar" style="width:23.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
+      <div class="tcb"><div class="bar" style="width:20.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
     </div></div>
         </div>
         <div class="sc">
@@ -159,14 +159,14 @@
           
         <div class="row" style="animation: slideRow 0.5s ease-out 0.15s both;">
           <span class="rl">Small</span>
-          <div class="bt"><div class="bar" style="width:40.0%;background:#6366F1;animation-delay:0.5s"></div></div>
-          <span class="rv">40%</span>
-          <span class="rm">4 repos</span>
+          <div class="bt"><div class="bar" style="width:45.0%;background:#6366F1;animation-delay:0.5s"></div></div>
+          <span class="rv">45%</span>
+          <span class="rm">5 repos</span>
         </div>
         <div class="row" style="animation: slideRow 0.5s ease-out 0.3s both;">
           <span class="rl">Medium</span>
-          <div class="bt"><div class="bar" style="width:60.0%;background:#FBBF24;animation-delay:0.65s"></div></div>
-          <span class="rv">60%</span>
+          <div class="bt"><div class="bar" style="width:55.0%;background:#FBBF24;animation-delay:0.65s"></div></div>
+          <span class="rv">55%</span>
           <span class="rm">6 repos</span>
         </div>
         <div class="row" style="animation: slideRow 0.5s ease-out 0.45s both;">
@@ -191,18 +191,18 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.27s both">
           <span class="sl">Lines added</span>
-          <span class="sv" style="color:#34D399">229.5k</span>
-          <span class="sd">~22.9k/repo</span>
+          <span class="sv" style="color:#34D399">230.6k</span>
+          <span class="sd">~21.0k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
           <span class="sv" style="color:#F43F5E">103.3k</span>
-          <span class="sd">~10.3k/repo</span>
+          <span class="sd">~9.4k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
-          <span class="sv" style="color:#6366F1">7.2</span>
-          <span class="sd">310 lifetime</span>
+          <span class="sv" style="color:#6366F1">7.1</span>
+          <span class="sd">313 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
