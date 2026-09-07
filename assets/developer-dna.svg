@@ -119,13 +119,13 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
@@ -149,7 +149,7 @@
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.5s both;">
       <div class="tca" style="background:#38BDF8"></div>
-      <span class="tcn">Celery</span>
+      <span class="tcn">Redis</span>
       <span class="tcl" style="color:#38BDF8">Intermediate</span>
       <div class="tcb"><div class="bar" style="width:20.0%;background:#38BDF8;animation-delay:0.8s"></div></div>
     </div></div>
@@ -201,8 +201,8 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
-          <span class="sv" style="color:#6366F1">7</span>
-          <span class="sd">315 lifetime</span>
+          <span class="sv" style="color:#6366F1">6.9</span>
+          <span class="sd">316 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
@@ -213,7 +213,7 @@
         </div>
       </div>
       <div class="footer">
-        <span>Updated Aug 2026</span>
+        <span>Updated Sep 2026</span>
         <span>GitHub Actions · profile-analytics</span>
       </div>
     </div>
