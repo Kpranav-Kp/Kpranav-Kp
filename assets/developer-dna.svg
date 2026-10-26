@@ -119,19 +119,19 @@
           <div class="tg">
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.1s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">Django</span>
+      <span class="tcn">React</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.4s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.18s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">PostgreSQL</span>
+      <span class="tcn">Django</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.48s"></div></div>
     </div>
     <div class="tc" style="animation: fadeIn 0.5s ease-out 0.26s both;">
       <div class="tca" style="background:#6366F1"></div>
-      <span class="tcn">React</span>
+      <span class="tcn">PostgreSQL</span>
       <span class="tcl" style="color:#6366F1">Advanced</span>
       <div class="tcb"><div class="bar" style="width:27.0%;background:#6366F1;animation-delay:0.56s"></div></div>
     </div>
@@ -196,20 +196,20 @@
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.33s both">
           <span class="sl">Lines deleted</span>
-          <span class="sv" style="color:#F43F5E">103.5k</span>
+          <span class="sv" style="color:#F43F5E">103.6k</span>
           <span class="sd">~9.4k/repo</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.39s both">
           <span class="sl">Commits / week</span>
-          <span class="sv" style="color:#6366F1">6.2</span>
-          <span class="sd">322 lifetime</span>
+          <span class="sv" style="color:#6366F1">6.1</span>
+          <span class="sd">323 lifetime</span>
         </div>
         <div class="ss" style="animation: slideUp 0.5s ease-out 0.45s both">
           <span class="sl">Peak hours</span>
           <span class="sv" style="color:#0EA5E9">11 PM</span>
           <span class="sd">Sunday</span>
         </div></div>
-          <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#94A3B8;border-color:#94A3B855;background:#94A3B811">Weekend warrior</span></div>
+          <div class="habits"><span class="hb" style="color:#A78BFA;border-color:#A78BFA55;background:#A78BFA11">Long streaks</span><span class="hb" style="color:#FB7185;border-color:#FB718555;background:#FB718511">Night coder</span><span class="hb" style="color:#38BDF8;border-color:#38BDF855;background:#38BDF811">Fast shipper</span></div>
         </div>
       </div>
       <div class="footer">
