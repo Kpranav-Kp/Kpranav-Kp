@@ -1,6 +1,6 @@
 {
-  "generated": "Oct 2026",
-  "generated_iso": "2026-10-26T12:35:27Z",
+  "generated": "Nov 2026",
+  "generated_iso": "2026-11-02T15:16:17Z",
   "languages": [
     {
       "name": "Python",
@@ -47,13 +47,6 @@
   ],
   "technologies": [
     {
-      "name": "React",
-      "percentage": 27.0,
-      "score": 1.0,
-      "level": "Advanced",
-      "level_color": "#6366F1"
-    },
-    {
       "name": "Django",
       "percentage": 27.0,
       "score": 1.0,
@@ -68,23 +61,30 @@
       "level_color": "#6366F1"
     },
     {
+      "name": "React",
+      "percentage": 27.0,
+      "score": 1.0,
+      "level": "Advanced",
+      "level_color": "#6366F1"
+    },
+    {
       "name": "Docker",
       "percentage": 21.0,
-      "score": 0.841,
+      "score": 0.842,
       "level": "Intermediate",
       "level_color": "#38BDF8"
     },
     {
       "name": "Python",
       "percentage": 57.0,
-      "score": 0.823,
+      "score": 0.822,
       "level": "Advanced",
       "level_color": "#6366F1"
     },
     {
-      "name": "Celery",
+      "name": "Redis",
       "percentage": 20.0,
-      "score": 0.795,
+      "score": 0.796,
       "level": "Intermediate",
       "level_color": "#38BDF8"
     }
@@ -113,10 +113,10 @@
     "current_streak": 0,
     "longest_streak": 9,
     "longest_range": "Feb 20 \u2013 28, 2026",
-    "lines_added": 230871,
-    "lines_deleted": 103555,
-    "total_commits": 323,
-    "commit_frequency": 6.1,
+    "lines_added": 230892,
+    "lines_deleted": 103576,
+    "total_commits": 324,
+    "commit_frequency": 6.0,
     "peak_hour": "11 PM",
     "peak_day": "Sunday",
     "languages_count": 8,
@@ -137,11 +137,6 @@
     "repos_count": 11
   },
   "activity": [
-    {
-      "month": "Nov",
-      "commit": 13,
-      "pct": 21
-    },
     {
       "month": "Dec",
       "commit": 19,
@@ -194,8 +189,13 @@
     },
     {
       "month": "Oct",
-      "commit": 3,
-      "pct": 5
+      "commit": 4,
+      "pct": 6
+    },
+    {
+      "month": "Nov",
+      "commit": 0,
+      "pct": 0
     }
   ]
 }
